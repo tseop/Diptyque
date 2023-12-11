@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+/* offscreen */
+.offscreen {
+    position: absolute;
+    display: block;
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+/* inner */
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+/* ptitle */
+.ptitle { 
+    margin-bottom: 40px;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 1;
+    color: #000;
+}
+/* ctitle */
+.ctitle { margin-bottom: 20px; font-size: 24px; font-weight: 700; line-height: 30px;}
+
+/* list-style-wrap */
+.list-style-wrap { display: flex; padding-bottom: 15px; margin-bottom: 20px; border-bottom: 1px solid #000; align-items: center;}
+.list-style-wrap .total-area { font-size: 0;}
+.list-style-wrap .text { display: inline-block; font-size: 16px; line-height: 20px; vertical-align: top;}
+.list-style-wrap .total-area .num { display: inline-block; margin-left: 3px; margin-top: 2px; font-size: 14px; line-height: 18px; font-weight: 700; vertical-align: top;}
+.list-style-wrap .right-area { display: flex; margin-left: auto; align-items: center;}
+.list-style-wrap .right-area .select-box .btn-select { position: relative; width: 130px; padding-right: 20px; text-align: right;}
+.list-style-wrap .right-area .select-box .btn-select span { display: inline-block; font-size: 14px; line-height: 20px; vertical-align: top;}
+.list-style-wrap .right-area .select-box .btn-select:after { content: ''; position: absolute; top: 2px; right: 0; width: 15px; height: 15px; background: url(../images/common/ico_select_open.png) center/ 15px 15px; transition: 0.2s;}
+.list-style-wrap .right-area .select-box.open .btn-select:after { transform: rotate(-180deg);}
+.list-style-wrap .right-area .select-box .option-list { display: none; position: absolute; top: 45px; left: 0; z-index: 10; width: 100%; padding: 6px 12px; background-color: #fff; border: 1px solid #000;}
+.list-style-wrap .right-area .select-box.open .option-list { display: block;}
+.list-style-wrap .right-area .select-box .option-list .option-item { padding: 10px 0;}
+.list-style-wrap .right-area .select-box .option-list .option-item .btn-option { display: block; width: 100%; text-align: left;}
+.list-style-wrap .right-area .select-box .option-list .option-item span { display: block; font-size: 14px; line-height: 20px; color: #666;}
+.list-style-wrap .right-area .select-box .option-list .option-item span:hover { color: #000;}
+.list-style-wrap .right-area .select-box + .btn-sm { margin-left: 15px;}
+
+/* tooltip */
+.tooltip-wrap { display: inline-block; font-size: 0; line-height: 0; vertical-align: top;}
+.btn-tooltip-open { width: 18px; height: 18px; background: #fff; border-radius: 50%; border: 1px solid #444;}
+.btn-tooltip-open:before { content: "?"; display: inline-block; margin-top: 1px; font-size: 12px; font-weight: 700; color: #000; line-height: 1; vertical-align: top;}
+.tooltip-wrap .tooltip-box { display: none; position: absolute; top: 27px; left: 50%; z-index: 10; transform: translateX(-50%); width: 250px; height: auto; padding: 28px 18px 24px; background: #fff; border: 1px solid #000; border-radius: 8px;}
+.tooltip-wrap.active .tooltip-box { display: block;}
+.tooltip-wrap .tooltip-box .btn-tooltip-close { position: absolute; top: 8px; right: 8px; width: 12px; height: 12px; background-image: url(../images/common/ico_tooltip_close.png);}
+.tooltip-wrap .tooltip-box .txt-list li { position: relative; padding-left: 10px; line-height: 16px;}
+.tooltip-wrap .tooltip-box .txt-list li:before { content: ''; position: absolute; top: 7px; left: 0; width: 2px; height: 2px; background: #444;}
+.tooltip-wrap .tooltip-box .txt-list li + li { margin-top: 10px;}
+.tooltip-wrap .tooltip-box .txt-list li span { display: inline-block; font-size: 12px; line-height: 16px; vertical-align: top;}
+
+/* tab-content */
+.tab-wrap .tab-list-wrap { margin-bottom: 40px;}
+.tab-wrap .tab-list-wrap .tab-list { display: flex;}
+.tab-wrap .tab-list-wrap .tab-list .tab-item { flex: 1; text-align: center; background-color: #fff; border: 1px solid #ccc; border-left: 0;}
+.tab-wrap .tab-list-wrap .tab-list .tab-item:first-child { border-left: 1px solid #ccc;}
+.tab-wrap .tab-list-wrap .tab-list .tab-item.active { background-color: #000; border: 0;}
+.tab-wrap .tab-list-wrap .tab-list .tab-item .btn-tab { width: 100%;}
+.tab-wrap .tab-list-wrap .tab-list .tab-item .btn-tab .tab-text { display:block; padding: 20px 0; font-size: 14px; font-weight: 700; line-height: 1;}
+.tab-wrap .tab-list-wrap .tab-list .tab-item.active .btn-tab .tab-text { color: #fff;}

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content="noindex" name="robots">
+    <meta name="description" content="DIPTYQUE">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+    <link rel="shortcut icon" href="../../assets/images/favicon/favicon.ico" type="image/x-icon">
+    
+    <title>DIPTYQUE</title>
+    
+    <!-- Library CSS ================================================== -->
+    <link rel="stylesheet" href="../../assets/lib/swiper/css/swiper.min.css">
+
+    <!-- CSS ================================================== -->
+    <link rel="stylesheet" href="../../assets/css/diptyque.css">
+
+    <!-- Fonts ================================================== -->
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Nanum+Myeongjo:wght@800&display=swap" rel="stylesheet">
+
+    <!-- Library javascript ================================================== -->
+    <script src="../../assets/lib/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+    <script src="../../assets/lib/swiper/js/swiper.min.js"></script>
+    
+    <!-- JavaScript ================================================== -->
+    <script src="../../assets/js/diptyque.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <div class="header-wrapper">
+        <div class="header-top">
+            <div class="inner">
+                <div class="unb-wrap">
+                    <button type="button" class="btn-search">
+                        <span class="offscreen">검색</span>
+                    </button>
+                    <ul class="unb-list">
+                        <!-- s:로그인전 노출 -->
+                        <li class="unb-item">
+                            <a href="#none" class="unb-link">로그인</a>
+                        </li>
+                        <li class="unb-item">
+                            <a href="#none" class="unb-link">회원가입</a>
+                        </li>
+                        <!-- e:로그인전 노출 -->
+                        <!-- s:로그인후 노출 -->
+                        <!-- <li class="unb-item">
+                            <a href="#none" class="unb-link">로그아웃</a>
+                        </li>
+                        <li class="unb-item">
+                            <a href="#none" class="unb-link">마이페이지</a>
+                        </li>
+                        <li class="unb-item">
+                            <a href="#none" class="unb-link">장바구니</a>
+                        </li> -->
+                        <!-- e:로그인후 노출 -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- //header-top -->
+        <div class="header-search-wrap">
+            <div class="search-area">
+                <div class="search-input-box">
+                    <input class="ip-header-search" type="search" title="검색어 입력" placeholder="어떤 제품을 찾으세요?">
+                    <button type="button" class="btn-ip-clear"><span class="offscreen">초기화</span></button>
+                    <a href="#none" class="btn-search"><span class="offscreen">검색</span></a>
+                </div>
+                <button type="button" class="btn-close"><span class="offscreen">닫기</span></button>
+            </div>
+        </div>
+        <!-- //header-search-wrap -->
+        <div class="header-bottom">
+            <div class="inner">
+                <h1 class="header-logo">
+                    <a href="../main/main.html" class="logo-link">
+                        <img src="../../assets/images/common/img_logo.png" alt="DIPTYQUE PARIS">
+                    </a>
+                </h1>
+                <div class="gnb-wrap">
+                    <ul class="gnb-list">
+                        <li class="gnb-item">
+                            <a href="../product/product_list.html" class="gnb-link">ALL</a>
+                        </li>
+                        <li class="gnb-item">
+                            <a href="#none" class="gnb-link">FRAGRANCES</a>
+                        </li>
+                        <li class="gnb-item">
+                            <a href="#none" class="gnb-link">BATH & BODY</a>
+                        </li>
+                        <li class="gnb-item">
+                            <a href="#none" class="gnb-link">CANDELS & HOME</a>
+                        </li>
+                        <li class="gnb-item">
+                            <a href="#none" class="gnb-link">HOME DECOR</a>
+                        </li>
+                    </ul>
+                    <!-- //상품관련영역 -->
+                    <ul class="gnb-list">
+                        <li class="gnb-item">
+                            <a href="#none" class="gnb-link">ABOUT</a>
+                        </li>
+                        <li class="gnb-item">
+                            <a href="#none" class="gnb-link">STORE</a>
+                        </li>
+                         <li class="gnb-item">
+                            <a href="#none" class="gnb-link">EVENT</a>
+                        </li>
+                        <li class="gnb-item">
+                            <a href="#none" class="gnb-link">SERVICE</a>
+                        </li>
+                    </ul>
+                    <!-- //브랜드관련영역 -->
+                </div>
+            </div>
+        </div>
+        <!-- //header-bottom -->
+    </div>
+    <!-- //header-wrapper -->
+    <div class="container-wrapper">
+        <div class="inner">
+            <div class="breadcrumb-wrapper">
+                <div class="breadcrumb-wrap">
+                    <ul class="breadcrumb-list">
+                        <li class="breadcrumb-item home"><a href="#none" class="breadcrumb-link"><span class="text">HOME</span></a></li>
+                        <li class="breadcrumb-item here"><span class="text">ALL</span></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- //breadcrumb-wrapper -->
+            <div class="content-wrapper">
+                <div class="ptitle">ALL</div>
+                <div class="prod-list-wrap">
+                    <div class="list-style-wrap">
+                        <div class="total-area">
+                            <span class="text">전체상품</span>
+                            <span class="num">120</span>
+                        </div>
+                        <div class="right-area">
+                            <div class="select-box">
+                                <button type="button" class="btn-select"><span>인기상품순</span></button>
+                                <ul class="option-list">
+                                    <li class="option-item">
+                                        <button type="button" class="btn-option"><span>인기상품순</span></button>
+                                    </li>
+                                    <li class="option-item">
+                                        <button type="button" class="btn-option"><span>신상품순</span></button>
+                                    </li>
+                                    <li class="option-item">
+                                        <button type="button" class="btn-option"><span>낮은가격순</span></button>
+                                    </li>
+                                    <li class="option-item">
+                                        <button type="button" class="btn-option"><span>높은가격순</span></button>
+                                    </li>
+                                    <li class="option-item">
+                                        <button type="button" class="btn-option"><span>할인율순</span></button>
+                                    </li>
+                                    <li class="option-item">
+                                        <button type="button" class="btn-option"><span>추천순</span></button>
+                                    </li>
+                                </ul>                              
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //list-style-wrap -->
+                    <!-- DESC : 상품 12개씩 출력 -->
+                    <ul class="prod-list">
+                        <li class="prod-item">
+                            <a href="../product/product_detail.html" class="prod-link">
+                                <div class="img-box">
+                                    <img src="../../assets/images/temp/prod_list_img_01.jpg" alt="DIPTYQUE 오 드 퍼퓸 플레르 드 뽀 75ml">
+                                </div>
+                                <div class="info-box">
+                                    <span class="cate">FRAGRANCES FRAGRANCES FRAGRANCES</span>
+                                    <span class="name">오 드 퍼퓸 플레르 드 뽀 75ml 오 드 퍼퓸 플레르 드 뽀 75ml 오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                    <span class="price">255,550</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- //prod-item -->
+                        <li class="prod-item">
+                            <a href="../product/product_detail.html" class="prod-link">
+                                <div class="img-box">
+                                    <img src="../../assets/images/temp/prod_list_img_01.jpg" alt="DIPTYQUE 오 드 퍼퓸 플레르 드 뽀 75ml">
+                                </div>
+                                <div class="info-box">
+                                    <span class="cate">FRAGRANCES</span>
+                                    <span class="name">오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                    <span class="price">255,550</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- //prod-item -->
+                        <li class="prod-item">
+                            <a href="../product/product_detail.html" class="prod-link">
+                                <div class="img-box">
+                                    <img src="../../assets/images/temp/prod_list_img_01.jpg" alt="DIPTYQUE 오 드 퍼퓸 플레르 드 뽀 75ml">
+                                </div>
+                                <div class="info-box">
+                                    <span class="cate">FRAGRANCES FRAGRANCES FRAGRANCES</span>
+                                    <span class="name">오 드 퍼퓸 플레르 드 뽀 75ml 오 드 퍼퓸 플레르 드 뽀 75ml 오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                    <span class="price">255,550</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- //prod-item -->
+                        <li class="prod-item">
+                            <a href="../product/product_detail.html" class="prod-link">
+                                <div class="img-box">
+                                    <img src="../../assets/images/temp/prod_list_img_01.jpg" alt="DIPTYQUE 오 드 퍼퓸 플레르 드 뽀 75ml">
+                                </div>
+                                <div class="info-box">
+                                    <span class="cate">FRAGRANCES</span>
+                                    <span class="name">오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                    <span class="price">255,550</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- //prod-item -->
+                        <li class="prod-item">
+                            <a href="../product/product_detail.html" class="prod-link">
+                                <div class="img-box">
+                                    <img src="../../assets/images/temp/prod_list_img_01.jpg" alt="DIPTYQUE 오 드 퍼퓸 플레르 드 뽀 75ml">
+                                </div>
+                                <div class="info-box">
+                                    <span class="cate">FRAGRANCES FRAGRANCES FRAGRANCES</span>
+                                    <span class="name">오 드 퍼퓸 플레르 드 뽀 75ml 오 드 퍼퓸 플레르 드 뽀 75ml 오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                    <span class="price">255,550</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- //prod-item -->
+                        <li class="prod-item">
+                            <a href="../product/product_detail.html" class="prod-link">
+                                <div class="img-box">
+                                    <img src="../../assets/images/temp/prod_list_img_01.jpg" alt="DIPTYQUE 오 드 퍼퓸 플레르 드 뽀 75ml">
+                                </div>
+                                <div class="info-box">
+                                    <span class="cate">FRAGRANCES</span>
+                                    <span class="name">오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                    <span class="price">255,550</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- //prod-item -->
+                        <li class="prod-item">
+                            <a href="../product/product_detail.html" class="prod-link">
+                                <div class="img-box">
+                                    <img src="../../assets/images/temp/prod_list_img_01.jpg" alt="DIPTYQUE 오 드 퍼퓸 플레르 드 뽀 75ml">
+                                </div>
+                                <div class="info-box">
+                                    <span class="cate">FRAGRANCES FRAGRANCES FRAGRANCES</span>
+                                    <span class="name">오 드 퍼퓸 플레르 드 뽀 75ml 오 드 퍼퓸 플레르 드 뽀 75ml 오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                    <span class="price">255,550</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- //prod-item -->
+                        <li class="prod-item">
+                            <a href="../product/product_detail.html" class="prod-link">
+                                <div class="img-box">
+                                    <img src="../../assets/images/temp/prod_list_img_01.jpg" alt="DIPTYQUE 오 드 퍼퓸 플레르 드 뽀 75ml">
+                                </div>
+                                <div class="info-box">
+                                    <span class="cate">FRAGRANCES FRAGRANCES FRAGRANCES</span>
+                                    <span class="name">오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                    <span class="price">255,550</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- //prod-item -->
+                        <li class="prod-item">
+                            <a href="../product/product_detail.html" class="prod-link">
+                                <div class="img-box">
+                                    <img src="../../assets/images/temp/prod_list_img_01.jpg" alt="DIPTYQUE 오 드 퍼퓸 플레르 드 뽀 75ml">
+                                </div>
+                                <div class="info-box">
+                                    <span class="cate">FRAGRANCES FRAGRANCES FRAGRANCES</span>
+                                    <span class="name">오 드 퍼퓸 플레르 드 뽀 75ml 오 드 퍼퓸 플레르 드 뽀 75ml 오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                    <span class="price">255,550</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- //prod-item -->
+                        <li class="prod-item">
+                            <a href="../product/product_detail.html" class="prod-link">
+                                <div class="img-box">
+                                    <img src="../../assets/images/temp/prod_list_img_01.jpg" alt="DIPTYQUE 오 드 퍼퓸 플레르 드 뽀 75ml">
+                                </div>
+                                <div class="info-box">
+                                    <span class="cate">FRAGRANCES</span>
+                                    <span class="name">오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                    <span class="price">255,550</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- //prod-item -->
+                        <li class="prod-item">
+                            <a href="../product/product_detail.html" class="prod-link">
+                                <div class="img-box">
+                                    <img src="../../assets/images/temp/prod_list_img_01.jpg" alt="DIPTYQUE 오 드 퍼퓸 플레르 드 뽀 75ml">
+                                </div>
+                                <div class="info-box">
+                                    <span class="cate">FRAGRANCES FRAGRANCES FRAGRANCES</span>
+                                    <span class="name">오 드 퍼퓸 플레르 드 뽀 75ml 오 드 퍼퓸 플레르 드 뽀 75ml 오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                    <span class="price">255,550</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- //prod-item -->
+                        <li class="prod-item">
+                            <a href="../product/product_detail.html" class="prod-link">
+                                <div class="img-box">
+                                    <img src="../../assets/images/temp/prod_list_img_01.jpg" alt="DIPTYQUE 오 드 퍼퓸 플레르 드 뽀 75ml">
+                                </div>
+                                <div class="info-box">
+                                    <span class="cate">FRAGRANCES</span>
+                                    <span class="name">오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                    <span class="price">255,550</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- //prod-item -->
+                    </ul>
+                    <div class="pagination">
+                        <a href="#none" class="btn-page first disabled"><span class="offscreen">처음</span></a>
+                        <a href="#none" class="btn-page prev disabled"><span class="offscreen">이전</span></a>
+                        <div class="page-num-group">
+                            <!-- DESC : 페이징 버튼 비활성화 클래스 - [ .current ] -->
+                            <span class="btn-page-num current">1</span>
+                            <a href="#none" class="btn-page-num">2</a>
+                            <a href="#none" class="btn-page-num">3</a>
+                            <a href="#none" class="btn-page-num">4</a>
+                            <a href="#none" class="btn-page-num">5</a>
+                        </div>
+                        <a href="#none" class="btn-page next"><span class="offscreen">다음</span></a>
+                        <a href="#none" class="btn-page last"><span class="offscreen">마지막</span></a>
+                    </div>
+                    <!-- //pagination -->
+                </div>
+            </div>
+            <!-- //content-wrapper -->
+        </div>
+    </div>
+    <!-- container-wrapper -->
+    <div class="footer-wrapper">
+        <div class="inner">
+            <div class="fnb-wrap">
+                <ul class="fnb-list">
+                    <li class="fnb-item">
+                        <a href="#none" class="fnb-link privacy">개인정보처리방침</a>
+                    </li>
+                    <li class="fnb-item">
+                        <a href="#none" class="fnb-link">이용약관</a>
+                    </li>
+                    <li class="fnb-item">
+                        <a href="#none" class="fnb-link">회사소개</a>
+                    </li>
+                    <li class="fnb-item">
+                        <a href="#none" class="fnb-link">고객센터</a>
+                    </li>
+                    <li class="fnb-item">
+                        <a href="#none" class="fnb-link">매장안내</a>
+                    </li>
+                </ul>
+                <p class="copy">COPYRIGHT@2023 DIPTYQUE PARIS CO. LTD ALL RIGHTS RESERVED.</p>
+            </div>
+            <div class="right-wrap">
+                <ul class="footer-sns-list">
+                    <li class="footer-sns-item">
+                        <a href="#none" class="footer-sns-link">
+                            <span class="ico-ft-sns ico-ft-sns-instagram"></span>
+                            <span class="text">Instagram</span>
+                        </a>
+                    </li>
+                    <li class="footer-sns-item">
+                        <a href="#none" class="footer-sns-link">
+                            <span class="ico-ft-sns ico-ft-sns-facebook"></span>
+                            <span class="text">Facebook</span>
+                        </a>
+                    </li>
+                    <li class="footer-sns-item">
+                        <a href="#none" class="footer-sns-link">
+                            <span class="ico-ft-sns ico-ft-sns-twitter"></span>
+                            <span class="text">Twitter</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- //footer-wrapper -->
+    <div class="floating-wrapper">
+        <button type="button" class="btn-go-top">
+            <span class="ico-go-top"><span class="offscreen">TOP</span></span>
+        </button>
+    </div>
+    <!-- //floating-wrapper -->
+</div>
+<!-- //wrapper -->
+</body>
+</html>

@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+/* table */
+.tbl-wrap { padding: 20px 0; border-top: 1px solid #000; border-bottom: 1px solid #000;}
+.tbl-row tr th { padding: 20px 15px; font-size: 16px; line-height: 24px; text-align: left; vertical-align: middle; color: #000;}
+.tbl-row tr td { padding: 20px 15px; font-size: 14px; line-height: 24px; vertical-align: middle; color: #000;}
+
+/* th.vertical-top */
+.tbl-row tr th.top { vertical-align: top;}
+.tbl-row tr th.top + td { padding: 17px 15px;}
+
+/* tooltip */
+.tbl-row tr th.tooltip { font-size: 0;}
+.tbl-row tr th.tooltip .txt { font-size: 15px;}
+.tbl-row tr th.tooltip .tooltip-wrap .btn-tooltip-open { margin-left: 5px; margin-top: 2px;}
