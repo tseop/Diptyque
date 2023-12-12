@@ -12,7 +12,7 @@ function setSearch (){
     });
 };
 
-//prod-detail-img-swiper
+//swiper-prod-detail
 function setProdDetailSwiper (){
     var swiperProdDetail = new Swiper('.swiper-prod-wrap.swiper-prod-detail .swiper-container', {
         slidesPerView: 'auto',
@@ -31,21 +31,36 @@ function setProdDetailSwiper (){
     });
 }
 
-//prod-list-swiper
-function setProdListSwiper (){
-    var swiperProdList = new Swiper('.swiper-prod-wrap.swiper-prod-list .swiper-container', {
-        slidesPerView: '4',
-        // slidesPerGroup: '4',
-        spaceBetween: 20,
-        navigation: {
-            nextEl: ".swiper-prod-wrap.swiper-prod-list .swiper-button-next",
-            prevEl: ".swiper-prod-wrap.swiper-prod-list .swiper-button-prev",
-        },
-        loop:false,
-        allowTouchMove: false,
-        observer: true,	// 추가
-  observeParents: true,
-    });
+//swiper-prod-list
+function setProdListSwiper() {
+    if ($('.swiper-prod-list').length > 0) {
+        $('.swiper-prod-list').each(function () {
+            var controlSwiperEl = $(this);
+            controlSwiperEl.addClass('is-active');
+            if ($('.swiper-slide', controlSwiperEl).length > 4) {
+                var controlSwiper = new Swiper(controlSwiperEl.find('.swiper-container').get(0), {
+                    init: false,
+                    slidesPerView: '4',
+                    spaceBetween: 20,
+                    speed: 250,
+                    navigation: {
+                        nextEl: $('.swiper-button-next', controlSwiperEl)[0],
+                        prevEl: $('.swiper-button-prev', controlSwiperEl)[0]
+                    },
+                    resistance: '100%', // swiper bounce 제거
+                    resistanceRatio: 0, // swiper bounce 제거
+                    updateOnWindowResize: true,
+                    //touchRatio: 0.3,
+                    observer: true,
+                    observeParents: true
+                });
+            } else {
+                controlSwiperEl.removeClass('is-active');
+            }
+            controlSwiper.init();
+
+        });
+    }
 }
 
 //tooltip

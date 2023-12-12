@@ -89,13 +89,20 @@
 .swiper-prod-wrap .prod-list-wrap .prod-list { flex-wrap: nowrap;}
 .swiper-prod-wrap .prod-list-wrap .prod-list .prod-item{ margin: 0;}
 
-.swiper-prod-wrap.swiper-prod-list .swiper-control-wrap { position: static; display: block;}
+.swiper-prod-wrap.swiper-prod-list .swiper-control-wrap,
+.swiper-prod-wrap.swiper-collection-prod-list .swiper-control-wrap { position: static; display: block;}
 .swiper-prod-wrap.swiper-prod-list .swiper-control-wrap .swiper-button-next,
-.swiper-prod-wrap.swiper-prod-list .swiper-control-wrap .swiper-button-prev { top: 50%; transform: translateY(-50%); width: 42px; height: 42px; margin-top: 0; background: transparent; z-index: 10;}
-.swiper-prod-wrap.swiper-prod-list .swiper-control-wrap .swiper-button-next { right: 0;}
-.swiper-prod-wrap.swiper-prod-list .swiper-control-wrap .swiper-button-prev { left: 0;}
+.swiper-prod-wrap.swiper-prod-list .swiper-control-wrap .swiper-button-prev,
+.swiper-prod-wrap.swiper-collection-prod-list .swiper-control-wrap .swiper-button-next,
+.swiper-prod-wrap.swiper-collection-prod-list .swiper-control-wrap .swiper-button-prev { top: 50%; transform: translateY(-50%); width: 42px; height: 42px; margin-top: 0; background: transparent; z-index: 10;}
+.swiper-prod-wrap.swiper-prod-list .swiper-control-wrap .swiper-button-next,
+.swiper-prod-wrap.swiper-collection-prod-list .swiper-control-wrap .swiper-button-next { right: 0;}
+.swiper-prod-wrap.swiper-prod-list .swiper-control-wrap .swiper-button-prev,
+.swiper-prod-wrap.swiper-collection-prod-list .swiper-control-wrap .swiper-button-prev { left: 0;}
 .swiper-prod-wrap.swiper-prod-list .swiper-control-wrap .swiper-button-next:before,
-.swiper-prod-wrap.swiper-prod-list .swiper-control-wrap .swiper-button-prev:before { 
+.swiper-prod-wrap.swiper-prod-list .swiper-control-wrap .swiper-button-prev:before,
+.swiper-prod-wrap.swiper-collection-prod-list .swiper-control-wrap .swiper-button-next:before,
+.swiper-prod-wrap.swiper-collection-prod-list .swiper-control-wrap .swiper-button-prev:before { 
     content: "";
     position: absolute;
     top: 0;
@@ -110,8 +117,10 @@
     border-radius: 42px;
     box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
 }
-.swiper-prod-wrap.swiper-prod-list .swiper-control-wrap .swiper-button-prev:before { left: -20px; transform: rotate(-180deg); box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1);}
-.swiper-prod-wrap.swiper-prod-list .swiper-control-wrap .swiper-button-next:before { right: -20px;}
+.swiper-prod-wrap.swiper-prod-list .swiper-control-wrap .swiper-button-prev:before,
+.swiper-prod-wrap.swiper-collection-prod-list .swiper-control-wrap .swiper-button-prev:before { left: -20px; transform: rotate(-180deg); box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1);}
+.swiper-prod-wrap.swiper-prod-list .swiper-control-wrap .swiper-button-next:before,
+.swiper-prod-wrap.swiper-collection-prod-list .swiper-control-wrap .swiper-button-next:before { right: -20px;}
 
 /* prod-detail-cont */
 .prod-detail-wrap .prod-detail-cont { margin-top: 100px;}

@@ -65,3 +65,11 @@
 .tab-wrap .tab-list-wrap .tab-list .tab-item .btn-tab { width: 100%;}
 .tab-wrap .tab-list-wrap .tab-list .tab-item .btn-tab .tab-text { display:block; padding: 20px 0; font-size: 14px; font-weight: 700; line-height: 1;}
 .tab-wrap .tab-list-wrap .tab-list .tab-item.active .btn-tab .tab-text { color: #fff;}
+
+.tab-wrap.type-line .tab-list-wrap .tab-list { border-bottom: 1px solid #ccc;}
+.tab-wrap.type-line .tab-list-wrap .tab-list .tab-item { margin-left: 15px; flex: 0 1 auto; border: 0;}
+.tab-wrap.type-line .tab-list-wrap .tab-list .tab-item:first-child { margin-left: 0;}
+.tab-wrap.type-line .tab-list-wrap .tab-list .tab-item.active { background: none;}
+.tab-wrap.type-line .tab-list-wrap .tab-list .tab-item .btn-tab .tab-text { position: relative; color: #666; padding-top: 0; padding-bottom: 20px;}
+.tab-wrap.type-line .tab-list-wrap .tab-list .tab-item.active .btn-tab .tab-text { color: #000;}
+.tab-wrap.type-line .tab-list-wrap .tab-list .tab-item.active .btn-tab .tab-text:after { content: ''; position: absolute; bottom: -1px; left: 0; display: block; width: 100%; height: 1px; background: #000;}
