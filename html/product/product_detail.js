@@ -1,8 +1,8 @@
 // Accordion menu faq
 function setAccordion() {
-    var Accordion = $(".fold-box .btn-fold");
+    var AccordionBtn = $(".fold-box .btn-fold");
 
-    Accordion.on("click", function (){
+    AccordionBtn.on("click", function (){
         var item = $(this);
 
         if(item.parent().find('.fold-box-content').hasClass('open')) {
@@ -10,13 +10,13 @@ function setAccordion() {
         } else {
             Accordion.parent().find('.fold-box-content').removeClass('open');
             item.parent().find('.fold-box-content').addClass('open');
-        }
-
-        //비밀글 적용
-        if(item.parent().hasClass('secret')){
-            item.parent().find('.fold-box-content').remove();            
-        }
+        }  
     });
+
+    //비밀글 적용
+    if(AccordionBtn.parent().hasClass('secret')){
+        AccordionBtn.parent().find('.fold-box-content').remove();            
+    }
 }
 
 // image expand
