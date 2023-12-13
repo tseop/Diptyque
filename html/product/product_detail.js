@@ -1,23 +1,31 @@
 // Accordion menu faq
 function setAccordion() {
-    var AccordionBtn = $(".fold-box .btn-fold");
+    
+    //비밀글
+    var secret = $(".fold-box.secret");
+        secret.find('.fold-box-content').remove();
 
-    AccordionBtn.on("click", function (){
+    //아코디언    
+    var Accordion = $(".fold-box .btn-fold");
+
+    Accordion.on("click", function (){
         var item = $(this);
 
         if(item.parent().find('.fold-box-content').hasClass('open')) {
             item.parent().find('.fold-box-content').removeClass('open');
         } else {
-            AccordionBtn.parent().find('.fold-box-content').removeClass('open');
+            Accordion.parent().find('.fold-box-content').removeClass('open');
             item.parent().find('.fold-box-content').addClass('open');
-        }  
+        }
     });
 
-    //비밀글 적용
-    if(AccordionBtn.parent().hasClass('secret')){
-        AccordionBtn.parent().find('.fold-box-content').remove();            
-    }
 }
+
+// 비밀글
+// function setSecret() {
+//     var secret = $(".fold-box.secret");
+//         secret.find('.fold-box-content').remove()
+// }
 
 // image expand
 function setImageExpand(){
@@ -45,6 +53,7 @@ function setfixedScr(){
 
 $(document).ready(function(){
     setAccordion();
+
     setImageExpand();
     setfixedScr();
 });  

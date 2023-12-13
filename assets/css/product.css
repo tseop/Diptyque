@@ -107,7 +107,7 @@
 /* qna fold-list */
 .prod-qna-list-wrap .list-style-wrap { margin-bottom: 0;}
 .fold-box-list .fold-box { position: relative; border-bottom: 1px solid #ccc;}
-.fold-box-list .fold-box .fold-box-header { display: flex; padding: 25px 20px; align-items: center; cursor: pointer;}
+.fold-box-list .fold-box .fold-box-header { display: flex; padding: 25px 20px; align-items: center;}
 .fold-box-list .fold-box .fold-box-header .question-title { display: inline-block; max-width: 850px; font-size: 16px; line-height: 24px; vertical-align: top;}
 .fold-box-list .fold-box.secret .fold-box-header .question-title:after { content: ''; display: inline-block; width: 15px; height: 18px; margin: 2px 0 0 10px; background-image: url(../../assets/images/common/ico_qna_secret.png); vertical-align: top;}
 .fold-box-list .fold-box .fold-box-header .question-info { margin-left: auto; font-size: 0;}
@@ -130,3 +130,4 @@
 }
 .fold-box-list .fold-box .fold-box-content .answer-box .desc { font-size: 16px; line-height: 24px;}
 .fold-box-list .fold-box .btn-fold { position: absolute; top:0; left: 0; right: 0; bottom: 0; width: 100%; height: 100%;}
+.fold-box-list .fold-box.secret .btn-fold { pointer-events: none;}
