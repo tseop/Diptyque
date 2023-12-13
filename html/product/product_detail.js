@@ -8,7 +8,7 @@ function setAccordion() {
         if(item.parent().find('.fold-box-content').hasClass('open')) {
             item.parent().find('.fold-box-content').removeClass('open');
         } else {
-            Accordion.parent().find('.fold-box-content').removeClass('open');
+            AccordionBtn.parent().find('.fold-box-content').removeClass('open');
             item.parent().find('.fold-box-content').addClass('open');
         }  
     });
