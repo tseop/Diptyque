@@ -21,12 +21,6 @@ function setAccordion() {
 
 }
 
-// 비밀글
-// function setSecret() {
-//     var secret = $(".fold-box.secret");
-//         secret.find('.fold-box-content').remove()
-// }
-
 // image expand
 function setImageExpand(){
     var btnImage = $(".review-img-area .img-list .img-file button")
@@ -53,7 +47,6 @@ function setfixedScr(){
 
 $(document).ready(function(){
     setAccordion();
-
     setImageExpand();
     setfixedScr();
 });  
