@@ -61,7 +61,8 @@
 .tab-wrap .tab-list-wrap .tab-list { display: flex;}
 .tab-wrap .tab-list-wrap .tab-list .tab-item { flex: 1; text-align: center; background-color: #fff; border: 1px solid #ccc; border-left: 0;}
 .tab-wrap .tab-list-wrap .tab-list .tab-item:first-child { border-left: 1px solid #ccc;}
-.tab-wrap .tab-list-wrap .tab-list .tab-item.active { background-color: #000; border: 0;}
+.tab-wrap .tab-list-wrap .tab-list .tab-item.active { background-color: #000; border: 0; margin-left: -1px;}
+.tab-wrap .tab-list-wrap .tab-list .tab-item.active:first-child { margin-left: 0;}
 .tab-wrap .tab-list-wrap .tab-list .tab-item .btn-tab { width: 100%;}
 .tab-wrap .tab-list-wrap .tab-list .tab-item .btn-tab .tab-text { display:block; padding: 20px 0; font-size: 14px; font-weight: 700; line-height: 1;}
 .tab-wrap .tab-list-wrap .tab-list .tab-item.active .btn-tab .tab-text { color: #fff;}
@@ -73,3 +74,58 @@
 .tab-wrap.type-line .tab-list-wrap .tab-list .tab-item .btn-tab .tab-text { position: relative; color: #666; padding-top: 0; padding-bottom: 20px;}
 .tab-wrap.type-line .tab-list-wrap .tab-list .tab-item.active .btn-tab .tab-text { color: #000;}
 .tab-wrap.type-line .tab-list-wrap .tab-list .tab-item.active .btn-tab .tab-text:after { content: ''; position: absolute; bottom: -1px; left: 0; display: block; width: 100%; height: 1px; background: #000;}
+
+/************* swiper **************/
+/* prod-list, collection-prod-list */
+.swiper-prod-wrap .prod-list-wrap .prod-list { flex-wrap: nowrap;}
+.swiper-prod-wrap .prod-list-wrap .prod-list .prod-item{ margin: 0;}
+.swiper-prod-wrap .swiper-control-wrap { position: static; display: block;}
+.swiper-prod-wrap .swiper-control-wrap .swiper-button-next,
+.swiper-prod-wrap .swiper-control-wrap .swiper-button-prev { top: 50%; transform: translateY(-50%); width: 42px; height: 42px; margin-top: 0; background: transparent; z-index: 10;}
+.swiper-prod-wrap .swiper-control-wrap .swiper-button-next { right: 0;}
+.swiper-prod-wrap .swiper-control-wrap .swiper-button-prev { left: 0;}
+.swiper-prod-wrap .swiper-control-wrap .swiper-button-next:before,
+.swiper-prod-wrap .swiper-control-wrap .swiper-button-prev:before { 
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 42px;
+    height: 42px;
+    background: url(../images/common/ico_list_swiper_arrow.png) center center no-repeat;
+    background-size: 7px 12px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    border-radius: 42px;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+}
+.swiper-prod-wrap .swiper-control-wrap .swiper-button-prev:before { left: -20px; transform: rotate(-180deg); box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1);}
+.swiper-prod-wrap .swiper-control-wrap .swiper-button-next:before { right: -20px;}
+
+/* prod-detail */
+.swiper-prod-wrap.swiper-prod-detail .swiper-container .swiper-wrapper .swiper-slide { padding: 0 60px;}
+.swiper-prod-wrap.swiper-prod-detail .swiper-container .swiper-wrapper .swiper-slide img { width: 100%;}
+
+.swiper-prod-wrap.swiper-prod-detail .swiper-control-wrap .swiper-button-next,
+.swiper-prod-wrap.swiper-prod-detail .swiper-control-wrap .swiper-button-prev { width: 60px; height: 60px;}
+.swiper-prod-wrap.swiper-prod-detail .swiper-control-wrap .swiper-button-next:before,
+.swiper-prod-wrap.swiper-prod-detail .swiper-control-wrap .swiper-button-prev:before {
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background: url(../images/common/ico_detail_swiper_arrow.png) center center no-repeat;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-size: 16px 32px;
+    border-radius: 0;
+    box-shadow: none;
+    border: 0;
+}
+.swiper-prod-wrap.swiper-prod-detail .swiper-control-wrap .swiper-button-prev:before { left: 0;}
+.swiper-prod-wrap.swiper-prod-detail .swiper-control-wrap .swiper-pagination { display: block; left: 50%; bottom: 0; transform: translateX(-50%);}
+.swiper-prod-wrap.swiper-prod-detail .swiper-control-wrap .swiper-pagination-bullet { width: 10px; height: 10px; margin-left: 8px; opacity: 1; background: #ccc;}
+.swiper-prod-wrap.swiper-prod-detail .swiper-control-wrap .swiper-pagination-bullet:first-child { margin-left: 0;}
+.swiper-prod-wrap.swiper-prod-detail .swiper-control-wrap .swiper-pagination-bullet-active { background: #000;}
+
+/* black-box */
+.black-box { padding: 30px 40px; background: #000;}

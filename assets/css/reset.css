@@ -49,9 +49,10 @@ button {
 	cursor: pointer;
     background-color: transparent;
 	font-family: 'Nanum Gothic', sans-serif;
+	color: #000;
 }
 
-input { border: 0; font-family: 'Nanum Gothic', sans-serif;}
+input { border: 0; font-family: 'Nanum Gothic', sans-serif; background: transparent;}
 
 input:focus { outline: none;}
 input::-ms-clear {display: none;}

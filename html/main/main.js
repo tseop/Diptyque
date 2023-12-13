@@ -20,19 +20,33 @@ $(document).ready(function(){
     });
 
     //collection-prod-list-swiper
-    function setCollectionProdListSwiper (){
-        var swiperCollectionProdList = new Swiper('.swiper-prod-wrap.swiper-collection-prod-list .swiper-container', {
-            slidesPerView: '2',
-            spaceBetween: 20,
-            navigation: {
-                nextEl: ".swiper-prod-wrap.swiper-collection-prod-list .swiper-button-next",
-                prevEl: ".swiper-prod-wrap.swiper-collection-prod-list .swiper-button-prev",
-            },
-            loop:false,
-            allowTouchMove: false,
-            observer: true,	// 추가
-            observeParents: true,
-        });
+    function setCollectionProdListSwiper() {
+        if ($('.swiper-collection-prod-list').length > 0) {
+            $('.swiper-collection-prod-list').each(function () {
+                var controlSwiperEl = $(this);
+                controlSwiperEl.addClass('is-active');
+                if ($('.swiper-slide', controlSwiperEl).length > 2) {
+                    var controlSwiper = new Swiper(controlSwiperEl.find('.swiper-container').get(0), {
+                        init: false,
+                        slidesPerView: '2',
+                        spaceBetween: 20,
+                        speed: 250,
+                        navigation: {
+                            nextEl: $('.swiper-button-next', controlSwiperEl)[0],
+                            prevEl: $('.swiper-button-prev', controlSwiperEl)[0]
+                        },
+                        resistance: '100%',
+                        resistanceRatio: 0,
+                        updateOnWindowResize: true,
+                        observer: true,
+                        observeParents: true
+                    });
+                } else {
+                    controlSwiperEl.removeClass('is-active');
+                }
+                controlSwiper.init();
+            });
+        }
     }
 
     setCollectionProdListSwiper();

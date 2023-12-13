@@ -47,18 +47,17 @@ function setProdListSwiper() {
                         nextEl: $('.swiper-button-next', controlSwiperEl)[0],
                         prevEl: $('.swiper-button-prev', controlSwiperEl)[0]
                     },
-                    resistance: '100%', // swiper bounce 제거
-                    resistanceRatio: 0, // swiper bounce 제거
+                    resistance: '100%',
+                    resistanceRatio: 0,
                     updateOnWindowResize: true,
-                    //touchRatio: 0.3,
                     observer: true,
-                    observeParents: true
+                    observeParents: true,
+                    allowTouchMove: false,
                 });
             } else {
                 controlSwiperEl.removeClass('is-active');
             }
             controlSwiper.init();
-
         });
     }
 }
