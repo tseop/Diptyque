@@ -1,4 +1,4 @@
-# Diptyque
+![화면 캡처 2023-12-26 185429](https://github.com/tseop/Diptyque/assets/145314306/039894a2-4ba6-4dce-aa62-d03f1996e51f)# Diptyque
 딥디크 PC 적응형 페이지<br>https://tseop.github.io/Diptyque/html/main/main.html
 
 ## 🖥 프로젝트 소개
@@ -6,6 +6,12 @@
 
 메인페이지, 상품목록페이지, 상품상세페이지로 구성했습니다.
 
+### 레이아웃
+#### 헤더
+![화면 캡처 2023-12-26 185209](https://github.com/tseop/Diptyque/assets/145314306/362572cc-107a-406b-9e35-41a0e8841668)
+상단 돋보기 모양 아이콘 클릭 시 검색 영역 활성화<br>하단 메뉴 ALL 클릭 시 목록 페이지 이동
+![화면 캡처 2023-12-26 185429](https://github.com/tseop/Diptyque/assets/145314306/2c20e659-aa99-41b0-8a56-d97d5c9cc3b7)
+페이지 스크롤 시 페이지 상단으로 이동하는 TOP버튼 활성화<br>버튼 클릭 시 페이지 상단으로 이동
 ### 메인페이지
 ![screencapture-file-C-Users-USER-20220523-Desktop-Diptyque-html-main-main-html-2023-12-21-17_48_04](https://github.com/tseop/Diptyque/assets/145314306/8fdccad3-237f-4ae7-abc9-cd405f7f24a6)
 
