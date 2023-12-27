@@ -72,7 +72,7 @@
 .prod-detail-cont .tab-wrap.fixed .tab-list-wrap ~ .tab-content { padding-top: 100px;}
 
 /* prod-review-total */
-.prod-review-total { padding-top: 30px; border-top: 1px solid #000; text-align: center;}
+.prod-review-total { display: flex; padding-top: 30px; border-top: 1px solid #000; flex-direction: column; align-items: center;}
 .prod-review-total .text { display: block; font-size: 24px; line-height: 30px; color: #444;}
 .prod-review-total .prod-review { position: relative; display: block; padding-top: 30px; margin-top: 20px;}
 .prod-review-total .prod-review .rating {position: absolute; top: 0; left: 50%; transform: translate(-50%); font-size: 21px; font-weight: 700; line-height: 1; vertical-align: top;}
