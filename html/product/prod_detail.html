@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="딥디크 반응형 리뉴얼 페이지입니다">
+    <link rel="shortcut icon" href="../../assets/images/favicon/favicon.ico" type="image/x-icon">
+    <title>딥디크 (Diptyque)</title>
+    
+    <!-- Library CSS ================================================== -->
+    <link rel="stylesheet" href="../../assets/lib/swiper/css/swiper.min.css">
+    
+    <!-- CSS ================================================== -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    
+    <!-- Library javascript ================================================== -->
+    <script src="../../assets/lib/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+    <script src="../../assets/lib/swiper/js/swiper.min.js"></script>
+    
+    <!-- JavaScript ================================================== -->
+    <script src="../../assets/js/diptyque.js"></script>
+</head>
+<body>
+    <div class="wrapper sub">
+        <div class="header-wrapper">
+            <div class="header-top">
+                <div class="inner">
+                    <div class="unb-wrap">
+                        <ul class="unb-list">
+                            <li class="unb-item">
+                                <a href="javascript:" class="unb-link">회원가입</a>
+                            </li>
+                            <li class="unb-item">
+                                <a href="javascript:" class="unb-link">로그인</a>
+                            </li>
+                            <li class="unb-item">
+                                <a href="javascript:" class="unb-link">마이페이지</a>
+                            </li>
+                            <li class="unb-item">
+                                <a href="javascript:" class="unb-link">고객센터</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- // unb-wrap -->
+                </div>
+            </div>
+            <!-- // header-top -->
+            <div class="header-middle">
+                <div class="inner">
+                    <!-- desc : mo 전용 -->
+                    <div class="header-left">
+                        <a href="./prod_list.html" class="btn-header-back"><span class="offscreen">뒤로</span></a>
+                    </div>
+                    <!-- // header-left -->
+                    <h1 class="logo">
+                        <a href="../main/main.html" title="첫 화면으로 이동">
+                            <img src="../../assets/images/comn/logo_img.png" alt="DIPTYQUE PARIS">
+                        </a>
+                    </h1>
+                    <!-- // logo -->
+                    <ul class="user-menu-list">
+                        <li class="user-menu-item search">
+                            <a href="javascript:" class="user-menu-link" role="button" title="검색">
+                                <span class="offscreen">검색열기</span>
+                            </a>
+                        </li>
+                        <li class="user-menu-item like">
+                            <a href="javascript:" class="user-menu-link" title="찜">
+                                <span class="offscreen">찜</span>
+                            </a>
+                        </li>
+                        <li class="user-menu-item bag">
+                            <!-- DESC : 장바구니 count 영역 최대 99까지 출력 -->
+                            <a href="javascript:" class="user-menu-link" title="장바구니">
+                                <span class="offscreen">장바구니</span>
+                                <span class="count">99+</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- //user-menu-list -->
+                </div>
+            </div>
+            <!-- // heaer-middle -->
+            <div class="header-bottom">
+                <div class="inner">
+                    <div class="gnb-wrap">
+                        <ul class="gnb-list main">
+                            <li class="gnb-item">
+                                <a href="./prod_list.html" class="gnb-link" title="전체 제품">ALL</a>
+                            </li>
+                            <li class="gnb-item">
+                                <a href="javascript:" class="gnb-link" title="향수 제품">PERFUME</a>
+                            </li>
+                            <li class="gnb-item">
+                                <a href="javascript:" class="gnb-link" title="목욕, 바디 제품">BATH & BODY</a>
+                            </li>
+                            <li class="gnb-item">
+                                <a href="javascript:" class="gnb-link" title="양초 제품">CANDLES & HOME</a>
+                            </li>
+                            <li class="gnb-item">
+                                <a href="javascript:" class="gnb-link" title="장식 제품">HOME DECOR</a>
+                            </li>
+                        </ul>
+                        <!-- // gnb-list main -->
+                        <ul class="gnb-list sub">
+                            <li class="gnb-item">
+                                <a href="javascript:" class="gnb-link" title="브랜드 소개">BRAND</a>
+                            </li>
+                            <li class="gnb-item">
+                                <a href="javascript:" class="gnb-link" title="매장 소개">STORE</a>
+                            </li>
+                            <li class="gnb-item">
+                                <a href="javascript:" class="gnb-link" title="이벤트">EVENT</a>
+                            </li>
+                            <li class="gnb-item">
+                                <a href="javascript:" class="gnb-link" title="공지사항">NOTICE</a>
+                            </li>
+                        </ul>
+                        <!-- // gnb-list sub -->
+                    </div>
+                    <!-- // gnb-wrap -->
+                </div>
+            </div>
+            <!-- // header-bottom -->
+            <!-- s : 검색영역 -->
+            <div class="header-search">
+                <div class="search-wrap">
+                    <div class="search-input-area">
+                        <div class="search-input-box">
+                            <input type="search" title="검색어 입력" class="ip-header-search" placeholder="어떤 제품을 찾으세요?">
+                            <button type="button" class="btn-ip-clear"><span class="offscreen">초기화</span></button>
+                        </div>
+                        <a href="javascript:" class="btn-ip-search"><span class="offscreen">검색</span></a>
+                    </div>
+                    <!-- // search-input-area -->
+                    <div class="search-keyword-area">
+                        <div class="recent-keyword">
+                            <div class="title-wrap">
+                                <span class="title">최근 검색어</span>
+                                <button class="btn-all-delete">전체삭제</button>
+                            </div>
+                            <!-- // title-wrap -->
+                            <div class="keyword-list-wrap">
+                                <!-- desc : 최대 10개 최신순으로 -->
+                                <ul class="keyword-list recent">
+                                    <li class="keyword-item">
+                                        <div class="left-area">
+                                            <a href="javascript:" class="keyword-link"><span class="keyword">오 드 퍼퓸 플레르 드 뽀 75ml</span></a>
+                                        </div>
+                                        <div class="right-area">
+                                            <span class="date">04.05</span>
+                                            <button class="btn-delete"><span class="offscreen">검색어 삭제</span></button>
+                                        </div>
+                                    </li>
+                                    <li class="keyword-item">
+                                        <div class="left-area">
+                                            <a href="javascript:" class="keyword-link"><span class="keyword">오 드 퍼퓸 플레르 드 뽀 75ml</span></a>
+                                        </div>
+                                        <div class="right-area">
+                                            <span class="date">04.04</span>
+                                            <button class="btn-delete"><span class="offscreen">검색어 삭제</span></button>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <!-- // keyword-list recent -->
+                                <div class="no-data">
+                                    <p class="no-data-desc">최근 검색어가 없습니다.</p>
+                                </div>
+                                <!-- // no-data -->
+                            </div>
+                            <!-- // keyword-list-wrap -->
+                        </div>
+                        <!-- // recent-keyword -->
+                        <div class="hot-keyword">
+                            <div class="title-wrap">
+                                <span class="title">인기 검색어</span>
+                            </div>
+                            <!-- // title-wrap -->
+                            <div class="keyword-list-wrap">
+                                <!-- desc : 검색 상위 10위권까지 출력 -->
+                                <ol class="keyword-list hot">
+                                    <li class="keyword-item">
+                                        <div class="left-area">
+                                            <a href="javascript:" class="keyword-link">
+                                                <span class="rank">1</span>
+                                                <span class="keyword">오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                            </a>
+                                        </div>
+                                        <div class="right-area">
+                                            <span class="rank-state"><span class="offscreen">변동 없음</span></span>
+                                        </div>
+                                    </li>
+                                    <li class="keyword-item">
+                                        <div class="left-area">
+                                            <a href="javascript:" class="keyword-link">
+                                                <span class="rank">2</span>
+                                                <span class="keyword">오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                            </a>
+                                        </div>
+                                        <div class="right-area">
+                                            <span class="rank-state up"><span class="offscreen">순위 상승</span>3</span>
+                                        </div>
+                                    </li>
+                                    <li class="keyword-item">
+                                        <div class="left-area">
+                                            <a href="javascript:" class="keyword-link">
+                                                <span class="rank">3</span>
+                                                <span class="keyword">오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                            </a>
+                                        </div>
+                                        <div class="right-area">
+                                            <span class="rank-state down"><span class="offscreen">순위 하락</span>2</span>
+                                        </div>
+                                    </li>
+                                    <li class="keyword-item">
+                                        <div class="left-area">
+                                            <a href="javascript:" class="keyword-link">
+                                                <span class="rank">4</span>
+                                                <span class="keyword">오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                            </a>
+                                        </div>
+                                        <div class="right-area">
+                                            <span class="rank-state down"><span class="offscreen">순위 하락</span>1</span>
+                                        </div>
+                                    </li>
+                                    <li class="keyword-item">
+                                        <div class="left-area">
+                                            <a href="javascript:" class="keyword-link">
+                                                <span class="rank">5</span>
+                                                <span class="keyword">오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                            </a>
+                                        </div>
+                                        <div class="right-area">
+                                            <span class="rank-state up"><span class="offscreen">순위 상승</span>1</span>
+                                        </div>
+                                    </li>
+                                    <li class="keyword-item">
+                                        <div class="left-area">
+                                            <a href="javascript:" class="keyword-link">
+                                                <span class="rank">6</span>
+                                                <span class="keyword">오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                            </a>
+                                        </div>
+                                        <div class="right-area">
+                                            <span class="rank-state"><span class="offscreen">변동 없음</span></span>
+                                        </div>
+                                    </li>
+                                    <li class="keyword-item">
+                                        <div class="left-area">
+                                            <a href="javascript:" class="keyword-link">
+                                                <span class="rank">7</span>
+                                                <span class="keyword">오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                            </a>
+                                        </div>
+                                        <div class="right-area">
+                                            <span class="rank-state down"><span class="offscreen">순위 하락</span>1</span>
+                                        </div>
+                                    </li>
+                                    <li class="keyword-item">
+                                        <div class="left-area">
+                                            <a href="javascript:" class="keyword-link">
+                                                <span class="rank">8</span>
+                                                <span class="keyword">오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                            </a>
+                                        </div>
+                                        <div class="right-area">
+                                            <span class="rank-state up"><span class="offscreen">순위 상승</span>1</span>
+                                        </div>
+                                    </li>
+                                    <li class="keyword-item">
+                                        <div class="left-area">
+                                            <a href="javascript:" class="keyword-link">
+                                                <span class="rank">9</span>
+                                                <span class="keyword">오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                            </a>
+                                        </div>
+                                        <div class="right-area">
+                                            <span class="rank-state down"><span class="offscreen">순위 하락</span>1</span>
+                                        </div>
+                                    </li>
+                                    <li class="keyword-item">
+                                        <div class="left-area">
+                                            <a href="javascript:" class="keyword-link">
+                                                <span class="rank">10</span>
+                                                <span class="keyword">오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                            </a>
+                                        </div>
+                                        <div class="right-area">
+                                            <span class="rank-state down"><span class="offscreen">순위 하락</span>1</span>
+                                        </div>
+                                    </li>
+                                </ol>
+                                <!-- // keyword-list hot -->
+                            </div>
+                           <!-- // keyword-list-wrap -->
+                        </div>
+                        <!-- // hot-keyword -->
+                    </div>
+                    <!-- // search-keyword-area -->
+                </div>
+                <!-- // search-wrap -->
+                <button type="button" class="btn-close"><span class="offscreen">닫기</span></button>
+            </div>
+            <!-- e : 검색영역 // header-search -->
+        </div>
+        <!-- // header-wrapper -->
+        <div class="container-wrapper">
+            <div class="content-wrapper">
+                <div class="inner">
+                    <div class="prod-detail-wrap">
+                        <div class="prod-detail-header">
+                            <div class="prod-img-area">
+                                <div class="swiper-prod-wrap swiper-prod-detail">
+                                    <div class="swiper-container swiper-container-horizontal">
+                                        <ul class="swiper-wrapper">
+                                            <li class="swiper-slide">
+                                                <div class="slide-img">
+                                                    <img src="../../assets/images/temp/prod_detail_img_01.jpg" alt="DIPTYQUE 오 드 퍼퓸 플레르 드 뽀 75ml">
+                                                </div>
+                                            </li>
+                                            <li class="swiper-slide">
+                                                <div class="slide-img">
+                                                    <img src="../../assets/images/temp/prod_detail_img_02.jpg" alt="DIPTYQUE 오 드 퍼퓸 플레르 드 뽀 75ml">
+                                                </div>
+                                            </li>
+                                            <li class="swiper-slide">
+                                                <div class="slide-img">
+                                                    <img src="../../assets/images/temp/prod_detail_img_03.jpg" alt="DIPTYQUE 오 드 퍼퓸 플레르 드 뽀 75ml">
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="swiper-control-wrap">
+                                        <button type="button" class="swiper-button-next"><span class="offscreen">다음</span></button>
+                                        <button type="button" class="swiper-button-prev"><span class="offscreen">이전</span></button>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                </div>
+                                <!-- // swiper-prod-wrap -->
+                            </div>
+                            <!-- // prod-img-area -->
+                            <div class="prod-info-area">
+                                <div class="prod-info">
+                                    <a href="javascript:" class="cate-link">FRAGRANCES</a>
+                                    <span class="prod-name">오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                    <span class="prod-price">255,550</span>
+                                    <span class="prod-review">
+                                        <span class="point size-m">
+                                            <span class="offscreen">평점</span>
+                                            <span class="ico-point" style="width: 100%;"></span>
+                                        </span>
+                                        <span class="rating">5.0</span>
+                                        <span class="review-count">
+                                            (<span class="num">100</span>)
+                                        </span>
+                                    </span>
+                                </div>
+                                <!-- // prod-info -->
+                                <div class="tbl-wrap">
+                                    <table class="tbl">
+                                        <caption>상품정보 테이블로 카드혜택, 적립포인트, 배송비, 용량, 수량을(를) 나타낸 표입니다.</caption>
+                                        <colgroup>
+                                            <col style="width: auto;">
+                                            <col style="width: auto;">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">카드혜택</th>
+                                                <td>무이자할부</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">적립포인트</th>
+                                                <td>기본 5% 적립</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="tooltip" scope="row">
+                                                    <span class="txt">배송비</span>
+                                                    <!-- 팝업 링크 변경 -->
+                                                    <div class="tooltip-wrap">
+                                                        <button type="button" class="btn-tooltip-open"><span class="offscreen">툴팁보기</span></button>
+                                                        <div class="tooltip-box">
+                                                            <button type="button" class="btn-tooltip-close"><span class="offscreen">닫기</span></button>
+                                                            <ul class="txt-list">
+                                                                <li><span>구매하신 상품에 따라 배송비가 부과됩니다.</span></li>
+                                                                <li><span>도서산간 지역은 배송비가 추가 될 수 있습니다.</span></li>
+                                                                <li><span>도서산간 지역은 FAQ를 통해 확인하실 수 있습니다.</span></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </th>
+                                                <td>30,000이상 구매시 무료(도서산간추가 3000원)</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">용량</th>
+                                                <td>75ml</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">수량</th>
+                                                <td class="form">
+                                                    <span class="item-count">
+                                                        <button type="button" class="btn-minus"><span class="offscreen">빼기</span></button>
+                                                        <input type="number" class="ip-num" value="1" title="수량입력">
+                                                        <button type="button" class="btn-plus"><span class="offscreen">더하기</span></button>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- // tbl-wrap -->
+                                <!-- 상품 합계 가격 -->
+                                <div class="prod-total">
+                                    <span class="tit">판매가</span>
+                                    <span class="num">255,550</span>
+                                </div>
+                                <!-- // 상품 합계 가격-->
+                                <div class="btn-box">
+                                    <button type="button" class="btn-lg btn-line-black"><span class="text">장바구니</span></button>
+                                    <button type="button" class="btn-lg btn-black"><span class="text">바로구매</span></button>
+                                </div>
+                                <!-- // btn-box -->
+                            </div>
+                        </div>
+                        <!-- // prod-detail-header -->
+                        <div class="recommend-prod-wrap">
+                            <div class="title-wrap">
+                                <span class="title">함께 많이 본 상품</span>
+                            </div>
+                            <!-- // title-wrap -->
+                            <div class="swiper-prod-wrap swiper-prod-list">
+                                <div class="swiper-container prod-list-wrap">
+                                    <ul class="swiper-wrapper prod-list">
+                                        <li class="swiper-slide prod-item">
+                                            <a href="javascript:" class="prod-link">
+                                                <div class="img-box">
+                                                    <img src="../../assets/images/temp/prod_list_img_01.jpg" alt="DIPTYQUE 오 드 퍼퓸 플레르 드 뽀 75ml">
+                                                </div>
+                                                <div class="info-box">
+                                                    <span class="cate">FRAGRANCES</span>
+                                                    <span class="name">오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                                    <span class="price">255,550</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <!-- prod-item -->
+                                        <li class="swiper-slide prod-item">
+                                            <a href="javascript:" class="prod-link">
+                                                <div class="img-box">
+                                                    <img src="../../assets/images/temp/prod_list_img_02.jpg" alt="DIPTYQUE 바디 밤 플레르 드 뽀 200ml">
+                                                </div>
+                                                <div class="info-box">
+                                                    <span class="cate">BATH & BODY</span>
+                                                    <span class="name">바디 밤 플레르 드 뽀 200ml</span>
+                                                    <span class="price">112,100</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <!-- prod-item -->
+                                        <li class="swiper-slide prod-item">
+                                            <a href="javascript:" class="prod-link">
+                                                <div class="img-box">
+                                                    <img src="../../assets/images/temp/prod_list_img_03.jpg" alt="DIPTYQUE 캔들 나르길레 190g">
+                                                </div>
+                                                <div class="info-box">
+                                                    <span class="cate">CANDELS & HOME</span>
+                                                    <span class="name">캔들 나르길레 190g</span>
+                                                    <span class="price">93,100</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <!-- prod-item -->
+                                        <li class="swiper-slide prod-item">
+                                            <a href="javascript:" class="prod-link">
+                                                <div class="img-box">
+                                                    <img src="../../assets/images/temp/prod_list_img_04.jpg" alt="DIPTYQUE 리드 디퓨저 베이 200ml">
+                                                </div>
+                                                <div class="info-box">
+                                                    <span class="cate">HOME DECOR</span>
+                                                    <span class="name">리드 디퓨저 베이 200ml</span>
+                                                    <span class="price">264,100</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <!-- // prod-item -->
+                                        <li class="swiper-slide prod-item">
+                                            <a href="javascript:" class="prod-link">
+                                                <div class="img-box">
+                                                    <img src="../../assets/images/temp/prod_list_img_01.jpg" alt="DIPTYQUE 오 드 퍼퓸 플레르 드 뽀 75ml">
+                                                </div>
+                                                <div class="info-box">
+                                                    <span class="cate">FRAGRANCES</span>
+                                                    <span class="name">오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                                    <span class="price">255,550</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <!-- prod-item -->
+                                        <li class="swiper-slide prod-item">
+                                            <a href="javascript:" class="prod-link">
+                                                <div class="img-box">
+                                                    <img src="../../assets/images/temp/prod_list_img_02.jpg" alt="DIPTYQUE 바디 밤 플레르 드 뽀 200ml">
+                                                </div>
+                                                <div class="info-box">
+                                                    <span class="cate">BATH & BODY</span>
+                                                    <span class="name">바디 밤 플레르 드 뽀 200ml</span>
+                                                    <span class="price">112,100</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <!-- prod-item -->
+                                        <li class="swiper-slide prod-item">
+                                            <a href="javascript:" class="prod-link">
+                                                <div class="img-box">
+                                                    <img src="../../assets/images/temp/prod_list_img_03.jpg" alt="DIPTYQUE 캔들 나르길레 190g">
+                                                </div>
+                                                <div class="info-box">
+                                                    <span class="cate">CANDELS & HOME</span>
+                                                    <span class="name">캔들 나르길레 190g</span>
+                                                    <span class="price">93,100</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <!-- prod-item -->
+                                        <li class="swiper-slide prod-item">
+                                            <a href="javascript:" class="prod-link">
+                                                <div class="img-box">
+                                                    <img src="../../assets/images/temp/prod_list_img_04.jpg" alt="DIPTYQUE 리드 디퓨저 베이 200ml">
+                                                </div>
+                                                <div class="info-box">
+                                                    <span class="cate">HOME DECOR</span>
+                                                    <span class="name">리드 디퓨저 베이 200ml</span>
+                                                    <span class="price">264,100</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <!-- // prod-item -->
+                                        <li class="swiper-slide prod-item">
+                                            <a href="javascript:" class="prod-link">
+                                                <div class="img-box">
+                                                    <img src="../../assets/images/temp/prod_list_img_01.jpg" alt="DIPTYQUE 오 드 퍼퓸 플레르 드 뽀 75ml">
+                                                </div>
+                                                <div class="info-box">
+                                                    <span class="cate">FRAGRANCES</span>
+                                                    <span class="name">오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                                    <span class="price">255,550</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <!-- prod-item -->
+                                        <li class="swiper-slide prod-item">
+                                            <a href="javascript:" class="prod-link">
+                                                <div class="img-box">
+                                                    <img src="../../assets/images/temp/prod_list_img_02.jpg" alt="DIPTYQUE 바디 밤 플레르 드 뽀 200ml">
+                                                </div>
+                                                <div class="info-box">
+                                                    <span class="cate">BATH & BODY</span>
+                                                    <span class="name">바디 밤 플레르 드 뽀 200ml</span>
+                                                    <span class="price">112,100</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <!-- prod-item -->
+                                    </ul>
+                                </div>
+                                <!-- // prod-list-wrap -->
+                                <div class="swiper-control-wrap">
+                                    <button type="button" class="swiper-button-next"><span class="offscreen">다음</span></button>
+                                    <button type="button" class="swiper-button-prev"><span class="offscreen">이전</span></button>
+                                </div>
+                            </div>
+                            <!-- // swiper-prod-wrap -->
+                        </div>
+                        <!-- // recommend-prod-wrap -->
+                        <div class="prod-detail-body">
+                            <div class="tab-wrap">
+                                <div class="tab-list-wrap">
+                                    <ul class="tab-list">
+                                        <li class="tab-item active"><button type="button" class="btn-tab"><span class="tab-text">상품상세정보</span></button></li>
+                                        <li class="tab-item"><button type="button" class="btn-tab"><span class="tab-text">리뷰(100)</span></button></li>
+                                        <li class="tab-item"><button type="button" class="btn-tab"><span class="tab-text">상품 Q&amp;A(100)</span></button></li>
+                                        <li class="tab-item"><button type="button" class="btn-tab"><span class="tab-text">배송/반품/교환안내</span></button></li>
+                                    </ul>
+                                </div>
+                                <!-- // tab-list-wrap -->
+                                <div class="tab-content">
+                                    <div class="prod-detail-info">
+                                        <!-- DESC : 에디터 영역입니다 -->
+                                        <div class="editor-wrap">
+                                            <div style="text-align:center;">
+                                                <img src="../../assets/images/temp/prod_detail_editor_img_01.jpg" alt="">
+                                                <br>
+                                                <img src="../../assets/images/temp/prod_detail_editor_img_02.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <!-- // editor-wrap -->
+                                        <div class="ctitle">상품정보제공고시</div>
+                                        <!-- // ctitle -->
+                                        <div class="tbl-wrap">
+                                            <table class="tbl transform">
+                                                <caption>상품정보제공고시를(을) 나타낸 표입니다.</caption>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">상품의 특징 및 효과</th>
+                                                        <td>플레드 드 뽀는 불어로 ‘피부의 꽃’이라는 뜻입니다. 고대 그리스 신화 중 가장 정열적이고 관능적인 프시케와 에로스의 사랑 이야기를 자연스러운 살 내음을 연상시키는 향으로 표현하였습니다. 신화만큼이나 신비로운 머스크 향은 관능적이고 자극적인 액센트로 체취를 피부를 정화해줍니다. 솜처럼 폭신하고 솜털처럼 보드랍고 파우더리한 아이리스와 앰버리, 프루티한 암브레트 시드로 강조되는 머스크향은 촉각적인 차원에서 그 진가를 발휘합니다. 핑크 페퍼콘은 머스크의 부드러움과 확연한 대조를 이루게 됩니다.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">사용순서</th>
+                                                        <td>맥박이 뛰는 부위, 옷깃이 스치는 곳에 분사하여 사용합니다.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">보관 취급 상 주의사항</th>
+                                                        <td>1. 화장품을 사용하여 다음과 같은 이상이 있는 경우에는 사용을 중지하여야 하며, 계속 사용하면 증상이 악화되므로 피부과 전문의 등에게 상담할 것 가) 사용 중 붉은반점, 부어오름, 가려움증, 자극 등의 이상이 있는 경우 나) 적용 부위가 직사광선에 의하여 위와 같은 이상이 있는 경우 2. 상처가 있는 부위, 습진 및 피부염 등의 이상이 있는 부위에는 사용을 하지 말 것 3. 보관 및 취급 시의 주의사항 가) 사용 후에는 반드시 마개를 닫아둘 것 나) 유아 · 소아의손이 닿지 않는 곳에 보관할 것 다) 고온 또는 저온의장소 및 직사광선이 닿는 곳에는 보관하지 말 것 4. 알코올 함유 제품으로 화기에 주의할 것</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">용량 또는 중량</th>
+                                                        <td>75ml</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">제품 주요 사양</th>
+                                                        <td>모든 피부 타입</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">사용기한 또는 개봉 후 사용기간</th>
+                                                        <td>대부분 사용기한 10개월 이상 남은 상품을 발송해 드립니다.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">사용 방법</th>
+                                                        <td>맥박이 뛰는 부위, 옷깃이 스치는 곳에 분사하여 사용합니다</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">전성분</th>
+                                                        <td>변성알코올, 향료, 정제수, 에칠헥실메톡시신나메이트, 에칠헥실살리실레이트, 부틸메톡시디벤조일메탄, 비에이치티, 리모넨, 리날룰, 알파-아이소메틸아이오논, 파네솔, 제라니올, 시트랄, 시트로넬올</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">기능성 화장품 심사 필 유무</th>
+                                                        <td>해당없음</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">사용할 때의 주의사항</th>
+                                                        <td>1)화장품 사용 시 또는 사용 후 직사광선에 의하여 사용부위가 붉은 반점, 부어오름 또는 가려움증 등의 이상 증상이나 부작용이 있는 경우에는 전문의 등과 상담할 것. 2) 상처가 있는 부위 등에는 사용을 자제할 것. 3) 본 제품은 알코올 함유 제품으로 화기에 주의할 것.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">화장품제조업자/화장품책임판매업자</th>
+                                                        <td>제조사: 딥티크 에스에이에스 프랑스<br>화장품책임판매업자: ㈜신세계인터내셔날</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">제조국</th>
+                                                        <td>프랑스</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">품질보증기준</th>
+                                                        <td>본 제품에 이상이 있을 경우 공정거래위원회 고시 소비자 분쟁해결 기준에 의해 보상해 드립니다.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <!-- // tbl-wrap -->
+                                    </div>
+                                    <!-- // prod-detail-info -->
+                                </div>
+                                <!-- // tab-content -->
+                                <div class="tab-content">
+                                    <div class="prod-detail-review">
+                                        <div class="ctitle">리뷰</div>
+                                        <!-- // ctitle -->
+                                        <div class="prod-review-total">
+                                            <span class="text">사용자 총 평점</span>
+                                            <span class="prod-review">
+                                                <span class="point size-lg">
+                                                    <span class="offscreen">평점</span>
+                                                    <span class="ico-point" style="width: 100%;"></span>
+                                                </span>
+                                                <span class="rating">5.0</span>
+                                            </span>
+                                        </div>
+                                        <!-- // prod-review-total -->
+                                        <div class="prod-review-list-wrap">
+                                            <div class="list-sort-wrap">
+                                                <div class="total-area">
+                                                    <span class="text">총</span>
+                                                    <span class="num">100</span>
+                                                </div>
+                                                <div class="right-area">
+                                                    <div class="select-box">
+                                                        <button type="button" class="btn-select"><span>최신순</span></button>
+                                                        <ul class="option-list">
+                                                            <li class="option-item">
+                                                                <button type="button" class="btn-option"><span>최신순</span></button>
+                                                            </li>
+                                                            <li class="option-item">
+                                                                <button type="button" class="btn-option"><span>공감순</span></button>
+                                                            </li>
+                                                            <li class="option-item">
+                                                                <button type="button" class="btn-option"><span>평점낮은순</span></button>
+                                                            </li>
+                                                            <li class="option-item">
+                                                                <button type="button" class="btn-option"><span>평점높은순</span></button>
+                                                            </li>
+                                                            <li class="option-item">
+                                                                <button type="button" class="btn-option"><span>추천순</span></button>
+                                                            </li>
+                                                        </ul>                     
+                                                    </div>
+                                                    <button type="button" class="btn-sm btn-black"><span class="text">리뷰작성</span></button>
+                                                </div>
+                                            </div>
+                                            <!-- // list-sort-wrap -->
+                                            <!-- DESC : 리뷰 5개씩 출력 -->
+                                            <ul class="prod-review-list">
+                                                <li class="prod-review-item">
+                                                    <div class="review-info">
+                                                        <span class="point size-m">
+                                                            <span class="offscreen">평점</span>
+                                                            <span class="ico-point" style="width: 100%;"><span class="offscreen">5점</span></span>
+                                                        </span>
+                                                        <span class="user">lee******</span>
+                                                        <span class="date">2024.04.11</span>
+                                                    </div>
+                                                    <div class="option-info">
+                                                        <span class="option">EDP 75ml/F</span>
+                                                    </div>
+                                                    <div class="type-info">
+                                                        <ul class="type-list">
+                                                            <li class="type-item">
+                                                                <span class="type">성별</span>
+                                                                <span class="desc">남</span>
+                                                            </li>
+                                                            <li class="type-item">
+                                                                <span class="type">스타일</span>
+                                                                <span class="desc">도시적</span>
+                                                            </li>
+                                                            <li class="type-item">
+                                                                <span class="type">잔향감</span>
+                                                                <span class="desc">오래 지속돼요</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="review-text">글쓰기 영역입니다. 리뷰 글 영역입니다. 리뷰입니다. 글쓰기 영역입니다. 리뷰 글 영역입니다. 리뷰입니다.글쓰기 영역입니다. 리뷰 글 영역입니다. 리뷰입니다.글쓰기 영역입니다. 리뷰 글 영역입니다. 리뷰입니다.글쓰기 영역입니다. 리뷰 글 영역입니다. 리뷰입니다. 글쓰기 영역입니다. 리뷰 글 영역입니다. 리뷰입니다.글쓰기 영역입니다. 리뷰 글 영역입니다. 리뷰입니다.글쓰기 영역입니다. 리뷰 글 영역입니다. 리뷰입니다.</div>
+                                                    <div class="review-img-area">
+                                                        <ul class="img-list">
+                                                            <li class="img-file">
+                                                                <button type="button">
+                                                                    <img src="../../assets/images/temp/review_img_01.jpeg" alt="">
+                                                                </button>
+                                                            </li>
+                                                            <li class="img-file">
+                                                                <button type="button">
+                                                                    <img src="../../assets/images/temp/review_img_01.jpeg" alt="">
+                                                                </button>
+                                                            </li>
+                                                            <li class="img-file">
+                                                                <button type="button">
+                                                                    <img src="../../assets/images/temp/review_img_01.jpeg" alt="">
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="btn-area">
+                                                        <button type="button" class="btn-like">
+                                                            <span class="offscreen">추천</span>
+                                                            <span class="like-count">10</span>
+                                                        </button>
+                                                        <button type="button" class="btn-report">
+                                                            <span class="txt">신고하기</span>
+                                                        </button>
+                                                    </div>
+                                                </li>
+                                                <!-- // prod-review-item -->
+                                                <li class="prod-review-item">
+                                                    <div class="review-info">
+                                                        <span class="point size-m">
+                                                            <span class="offscreen">평점</span>
+                                                            <span class="ico-point" style="width: 100%;"><span class="offscreen">5점</span></span>
+                                                        </span>
+                                                        <span class="user">lee******</span>
+                                                        <span class="date">2024.04.11</span>
+                                                    </div>
+                                                    <div class="option-info">
+                                                        <span class="option">EDP 75ml/F</span>
+                                                    </div>
+                                                    <div class="type-info">
+                                                        <ul class="type-list">
+                                                            <li class="type-item">
+                                                                <span class="type">성별</span>
+                                                                <span class="desc">남</span>
+                                                            </li>
+                                                            <li class="type-item">
+                                                                <span class="type">스타일</span>
+                                                                <span class="desc">도시적</span>
+                                                            </li>
+                                                            <li class="type-item">
+                                                                <span class="type">잔향감</span>
+                                                                <span class="desc">오래 지속돼요</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="review-text">글쓰기 영역입니다. 리뷰 글 영역입니다. 리뷰입니다. 글쓰기 영역입니다. 리뷰 글 영역입니다. 리뷰입니다.글쓰기 영역입니다. 리뷰 글 영역입니다. 리뷰입니다.글쓰기 영역입니다. 리뷰 글 영역입니다. 리뷰입니다.글쓰기 영역입니다. 리뷰 글 영역입니다. 리뷰입니다. 글쓰기 영역입니다. 리뷰 글 영역입니다. 리뷰입니다.글쓰기 영역입니다. 리뷰 글 영역입니다. 리뷰입니다.글쓰기 영역입니다. 리뷰 글 영역입니다. 리뷰입니다.</div>
+                                                    <div class="btn-area">
+                                                        <button type="button" class="btn-like">
+                                                            <span class="offscreen">추천</span>
+                                                            <span class="like-count">10</span>
+                                                        </button>
+                                                        <button type="button" class="btn-report">
+                                                            <span class="txt">신고하기</span>
+                                                        </button>
+                                                    </div>
+                                                </li>
+                                                <!-- // prod-review-item -->
+                                                <li class="prod-review-item">
+                                                    <div class="review-info">
+                                                        <span class="point size-m">
+                                                            <span class="offscreen">평점</span>
+                                                            <span class="ico-point" style="width: 100%;"><span class="offscreen">5점</span></span>
+                                                        </span>
+                                                        <span class="user">lee******</span>
+                                                        <span class="date">2024.04.11</span>
+                                                    </div>
+                                                    <div class="option-info">
+                                                        <span class="option">EDP 75ml/F</span>
+                                                    </div>
+                                                    <div class="type-info">
+                                                        <ul class="type-list">
+                                                            <li class="type-item">
+                                                                <span class="type">성별</span>
+                                                                <span class="desc">남</span>
+                                                            </li>
+                                                            <li class="type-item">
+                                                                <span class="type">스타일</span>
+                                                                <span class="desc">도시적</span>
+                                                            </li>
+                                                            <li class="type-item">
+                                                                <span class="type">잔향감</span>
+                                                                <span class="desc">오래 지속돼요</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="review-text">글쓰기 영역입니다. 리뷰 글 영역입니다. 리뷰입니다. 글쓰기 영역입니다. 리뷰 글 영역입니다. 리뷰입니다.글쓰기 영역입니다. 리뷰 글 영역입니다. 리뷰입니다.글쓰기 영역입니다. 리뷰 글 영역입니다. 리뷰입니다.글쓰기 영역입니다. 리뷰 글 영역입니다. 리뷰입니다. 글쓰기 영역입니다. 리뷰 글 영역입니다. 리뷰입니다.글쓰기 영역입니다. 리뷰 글 영역입니다. 리뷰입니다.글쓰기 영역입니다. 리뷰 글 영역입니다. 리뷰입니다.</div>
+                                                    <div class="review-img-area">
+                                                        <ul class="img-list">
+                                                            <li class="img-file">
+                                                                <button type="button">
+                                                                    <img src="../../assets/images/temp/review_img_01.jpeg" alt="">
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="btn-area">
+                                                        <button type="button" class="btn-like">
+                                                            <span class="offscreen">추천</span>
+                                                            <span class="like-count">10</span>
+                                                        </button>
+                                                        <button type="button" class="btn-report">
+                                                            <span class="txt">신고하기</span>
+                                                        </button>
+                                                    </div>
+                                                </li>
+                                                <!-- // prod-review-item -->
+                                                <li class="prod-review-item">
+                                                    <div class="review-info">
+                                                        <span class="point size-m">
+                                                            <span class="offscreen">평점</span>
+                                                            <span class="ico-point" style="width: 100%;"><span class="offscreen">5점</span></span>
+                                                        </span>
+                                                        <span class="user">lee******</span>
+                                                        <span class="date">2024.04.11</span>
+                                                    </div>
+                                                    <div class="option-info">
+                                                        <span class="option">EDP 75ml/F</span>
+                                                    </div>
+                                                    <div class="type-info">
+                                                        <ul class="type-list">
+                                                            <li class="type-item">
+                                                                <span class="type">성별</span>
+                                                                <span class="desc">남</span>
+                                                            </li>
+                                                            <li class="type-item">
+                                                                <span class="type">스타일</span>
+                                                                <span class="desc">도시적</span>
+                                                            </li>
+                                                            <li class="type-item">
+                                                                <span class="type">잔향감</span>
+                                                                <span class="desc">오래 지속돼요</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="review-text">글쓰기 영역입니다. 리뷰 글 영역입니다. 리뷰입니다. 글쓰기 영역입니다. 리뷰 글 영역입니다. 리뷰입니다.글쓰기 영역입니다. 리뷰 글 영역입니다. 리뷰입니다.글쓰기 영역입니다. 리뷰 글 영역입니다. 리뷰입니다.글쓰기 영역입니다. 리뷰 글 영역입니다. 리뷰입니다. 글쓰기 영역입니다. 리뷰 글 영역입니다. 리뷰입니다.글쓰기 영역입니다. 리뷰 글 영역입니다. 리뷰입니다.글쓰기 영역입니다. 리뷰 글 영역입니다. 리뷰입니다.</div>
+                                                    <div class="btn-area">
+                                                        <button type="button" class="btn-like">
+                                                            <span class="offscreen">추천</span>
+                                                            <span class="like-count">10</span>
+                                                        </button>
+                                                        <button type="button" class="btn-report">
+                                                            <span class="txt">신고하기</span>
+                                                        </button>
+                                                    </div>
+                                                </li>
+                                                <!-- // prod-review-item -->
+                                                <li class="prod-review-item">
+                                                    <div class="review-info">
+                                                        <span class="point size-m">
+                                                            <span class="offscreen">평점</span>
+                                                            <span class="ico-point" style="width: 100%;"><span class="offscreen">5점</span></span>
+                                                        </span>
+                                                        <span class="user">lee******</span>
+                                                        <span class="date">2024.04.11</span>
+                                                    </div>
+                                                    <div class="option-info">
+                                                        <span class="option">EDP 75ml/F</span>
+                                                    </div>
+                                                    <div class="type-info">
+                                                        <ul class="type-list">
+                                                            <li class="type-item">
+                                                                <span class="type">성별</span>
+                                                                <span class="desc">남</span>
+                                                            </li>
+                                                            <li class="type-item">
+                                                                <span class="type">스타일</span>
+                                                                <span class="desc">도시적</span>
+                                                            </li>
+                                                            <li class="type-item">
+                                                                <span class="type">잔향감</span>
+                                                                <span class="desc">오래 지속돼요</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="review-text">글쓰기 영역입니다. 리뷰 글 영역입니다. 리뷰입니다. 글쓰기 영역입니다. 리뷰 글 영역입니다. 리뷰입니다.글쓰기 영역입니다. 리뷰 글 영역입니다. 리뷰입니다.글쓰기 영역입니다. 리뷰 글 영역입니다. 리뷰입니다.글쓰기 영역입니다. 리뷰 글 영역입니다. 리뷰입니다. 글쓰기 영역입니다. 리뷰 글 영역입니다. 리뷰입니다.글쓰기 영역입니다. 리뷰 글 영역입니다. 리뷰입니다.글쓰기 영역입니다. 리뷰 글 영역입니다. 리뷰입니다.</div>
+                                                    <div class="review-img-area">
+                                                        <ul class="img-list">
+                                                            <li class="img-file">
+                                                                <button type="button">
+                                                                    <img src="../../assets/images/temp/review_img_01.jpeg" alt="">
+                                                                </button>
+                                                            </li>
+                                                            <li class="img-file">
+                                                                <button type="button">
+                                                                    <img src="../../assets/images/temp/review_img_01.jpeg" alt="">
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="btn-area">
+                                                        <button type="button" class="btn-like">
+                                                            <span class="offscreen">추천</span>
+                                                            <span class="like-count">10</span>
+                                                        </button>
+                                                        <button type="button" class="btn-report">
+                                                            <span class="txt">신고하기</span>
+                                                        </button>
+                                                    </div>
+                                                </li>
+                                                <!-- // prod-review-item -->
+                                            </ul>
+                                            <!-- // prod-review-list -->
+                                            <div class="pagination">
+                                                <a href="#none" class="btn-page first disabled"><span class="offscreen">처음</span></a>
+                                                <a href="#none" class="btn-page prev disabled"><span class="offscreen">이전</span></a>
+                                                <div class="page-num-group">
+                                                    <!-- DESC : 페이징 버튼 비활성화 클래스 - [ .current ] -->
+                                                    <span class="btn-page-num current">1</span>
+                                                    <a href="#none" class="btn-page-num">2</a>
+                                                    <a href="#none" class="btn-page-num">3</a>
+                                                    <a href="#none" class="btn-page-num">4</a>
+                                                    <a href="#none" class="btn-page-num">5</a>
+                                                </div>
+                                                <a href="#none" class="btn-page next"><span class="offscreen">다음</span></a>
+                                                <a href="#none" class="btn-page last"><span class="offscreen">마지막</span></a>
+                                            </div>
+                                            <!-- // pagination -->
+                                        </div>
+                                        <!-- // prod-review-list-wrap -->
+                                    </div>
+                                    <!-- // prod-detail-review -->
+                                </div>
+                                <!-- // tab-content -->
+                                <div class="tab-content">
+                                    <div class="prod-detail-qna">
+                                        <div class="ctitle">상품 Q&A</div>
+                                        <!-- // ctitle -->
+                                        <div class="prod-qna-list-wrap">
+                                            <div class="list-sort-wrap">
+                                                <p class="text">상품에 대한 배송, 교환, 취소등의 자세한 문의사항은 <a href="javascript:"><strong>고객센터 &gt; 1:1문의</strong></a>를 이용하여 주시기 바랍니다.</p>
+                                                <div class="right-area">
+                                                    <button type="button" class="btn-sm btn-black"><span class="text">문의하기</span></button>
+                                                </div>
+                                            </div>
+                                            <!-- // list-sort-wrap -->
+                                            <!-- DESC: 문의 10개씩 출력 -->
+                                            <ul class="fold-box-list">
+                                                <li class="fold-box secret">
+                                                    <div class="fold-box-header">
+                                                        <div class="question-title">문의 사항입니다.</div>
+                                                        <div class="question-info">
+                                                            <span class="user">lee******</span>
+                                                            <span class="date">2024.04.11</span>
+                                                            <span class="state">답변완료</span>
+                                                        </div>
+                                                    </div>
+                                                    <button type="button" class="btn-fold"><span class="offscreen">열기</span></button>
+                                                </li>
+                                                <li class="fold-box">
+                                                    <div class="fold-box-header">
+                                                        <div class="question-title">문의 사항입니다.</div>
+                                                        <div class="question-info">
+                                                            <span class="user">lee******</span>
+                                                            <span class="date">2024.04.11</span>
+                                                            <span class="state">답변완료</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="fold-box-content">
+                                                        <div class="question-box">
+                                                            <p class="desc">문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.</p>
+                                                        </div>
+                                                        <div class="answer-box">
+                                                            <p class="desc">문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.</p>
+                                                        </div>
+                                                    </div>
+                                                    <button type="button" class="btn-fold"><span class="offscreen">열기</span></button>
+                                                </li>
+                                                <li class="fold-box">
+                                                    <div class="fold-box-header">
+                                                        <div class="question-title">문의 사항입니다.</div>
+                                                        <div class="question-info">
+                                                            <span class="user">lee******</span>
+                                                            <span class="date">2024.04.11</span>
+                                                            <span class="state">답변완료</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="fold-box-content">
+                                                        <div class="question-box">
+                                                            <p class="desc">문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.</p>
+                                                        </div>
+                                                        <div class="answer-box">
+                                                            <p class="desc">문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.</p>
+                                                        </div>
+                                                    </div>
+                                                    <button type="button" class="btn-fold"><span class="offscreen">열기</span></button>
+                                                </li>
+                                                <li class="fold-box">
+                                                    <div class="fold-box-header">
+                                                        <div class="question-title">문의 사항입니다.</div>
+                                                        <div class="question-info">
+                                                            <span class="user">lee******</span>
+                                                            <span class="date">2024.04.11</span>
+                                                            <span class="state">답변완료</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="fold-box-content">
+                                                        <div class="question-box">
+                                                            <p class="desc">문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.</p>
+                                                        </div>
+                                                        <div class="answer-box">
+                                                            <p class="desc">문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.</p>
+                                                        </div>
+                                                    </div>
+                                                    <button type="button" class="btn-fold"><span class="offscreen">열기</span></button>
+                                                </li>
+                                                <li class="fold-box">
+                                                    <div class="fold-box-header">
+                                                        <div class="question-title">문의 사항입니다.</div>
+                                                        <div class="question-info">
+                                                            <span class="user">lee******</span>
+                                                            <span class="date">2024.04.11</span>
+                                                            <span class="state">답변완료</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="fold-box-content">
+                                                        <div class="question-box">
+                                                            <p class="desc">문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.</p>
+                                                        </div>
+                                                        <div class="answer-box">
+                                                            <p class="desc">문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.</p>
+                                                        </div>
+                                                    </div>
+                                                    <button type="button" class="btn-fold"><span class="offscreen">열기</span></button>
+                                                </li>
+                                                <li class="fold-box">
+                                                    <div class="fold-box-header">
+                                                        <div class="question-title">문의 사항입니다.</div>
+                                                        <div class="question-info">
+                                                            <span class="user">lee******</span>
+                                                            <span class="date">2024.04.11</span>
+                                                            <span class="state">답변완료</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="fold-box-content">
+                                                        <div class="question-box">
+                                                            <p class="desc">문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.</p>
+                                                        </div>
+                                                        <div class="answer-box">
+                                                            <p class="desc">문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.</p>
+                                                        </div>
+                                                    </div>
+                                                    <button type="button" class="btn-fold"><span class="offscreen">열기</span></button>
+                                                </li>
+                                                <li class="fold-box secret">
+                                                    <div class="fold-box-header">
+                                                        <div class="question-title">문의 사항입니다.</div>
+                                                        <div class="question-info">
+                                                            <span class="user">lee******</span>
+                                                            <span class="date">2024.04.11</span>
+                                                            <span class="state">답변완료</span>
+                                                        </div>
+                                                    </div>
+                                                    <button type="button" class="btn-fold"><span class="offscreen">열기</span></button>
+                                                </li>
+                                                <li class="fold-box">
+                                                    <div class="fold-box-header">
+                                                        <div class="question-title">문의 사항입니다.</div>
+                                                        <div class="question-info">
+                                                            <span class="user">lee******</span>
+                                                            <span class="date">2024.04.11</span>
+                                                            <span class="state">답변완료</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="fold-box-content">
+                                                        <div class="question-box">
+                                                            <p class="desc">문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.문의 사항입니다.</p>
+                                                        </div>
+                                                        <div class="answer-box">
+                                                            <p class="desc">문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.문의 답변입니다.</p>
+                                                        </div>
+                                                    </div>
+                                                    <button type="button" class="btn-fold"><span class="offscreen">열기</span></button>
+                                                </li>
+                                                <li class="fold-box secret">
+                                                    <div class="fold-box-header">
+                                                        <div class="question-title">문의 사항입니다.</div>
+                                                        <div class="question-info">
+                                                            <span class="user">lee******</span>
+                                                            <span class="date">2024.04.11</span>
+                                                            <span class="state">답변완료</span>
+                                                        </div>
+                                                    </div>
+                                                    <button type="button" class="btn-fold"><span class="offscreen">열기</span></button>
+                                                </li>
+                                            </ul>
+                                            <!-- // fold-box-list -->
+                                            <div class="pagination">
+                                                <a href="#none" class="btn-page first disabled"><span class="offscreen">처음</span></a>
+                                                <a href="#none" class="btn-page prev disabled"><span class="offscreen">이전</span></a>
+                                                <div class="page-num-group">
+                                                    <!-- DESC : 페이징 버튼 비활성화 클래스 - [ .current ] -->
+                                                    <span class="btn-page-num current">1</span>
+                                                    <a href="#none" class="btn-page-num">2</a>
+                                                    <a href="#none" class="btn-page-num">3</a>
+                                                    <a href="#none" class="btn-page-num">4</a>
+                                                    <a href="#none" class="btn-page-num">5</a>
+                                                </div>
+                                                <a href="#none" class="btn-page next"><span class="offscreen">다음</span></a>
+                                                <a href="#none" class="btn-page last"><span class="offscreen">마지막</span></a>
+                                            </div>
+                                            <!-- // pagination -->
+                                        </div>
+                                        <!-- // prod-qna-list-wrap -->
+                                    </div>
+                                    <!-- // prod-detail-qna -->
+                                </div>
+                                <!-- // tab-content -->
+                                <div class="tab-content" style="display: none;">
+                                    <div class="prod-detail-delivery">
+                                        <div class="ctitle">배송/반품/교환안내</div>
+                                        <!-- // ctitle -->
+                                        <div class="tbl-wrap">
+                                            <table class="tbl transform">
+                                                <caption>배송/반품/교환안내를(을) 나타낸 표입니다.</caption>
+                                                <tbody>
+                                                    <tr>
+                                                        <th class="top" scope="row">배송기간</th>
+                                                        <td>- 상품의 배송비는 공급업체의 정책에 따라 다르오며 공휴일 및 휴일은 배송이 불가합니다.
+                                                            <br>- 상품별로 상품 특성 및 배송지에 따라 배송유형 및 소요기간이 달라집니다.
+                                                            <br>- 상품별 출고일시가 달라 각각 배송될 수 있습니다.
+                                                            <br>- 일부 주문상품 또는 예약상품의 경우 기본 배송일 외에 추가 배송 소요일이 발생될 수 있습니다.
+                                                            <br>- 도서 산간 지역은 별도의 배송비와 반품비가 추가될 수 있습니다.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="top" scope="row">반품배송비</th>
+                                                        <td>전체 반품 시 : 5,000원 <br> 부분 반품 시 : 2,500원 (단, 부분 반품 후 결제금액이 3만원 미만인 경우 5,000원) <br> *반품비는 상품별로 상이할 수 있습니다.<br> *도서산간 지역은 추가 배송비가 부과됩니다.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="top" scope="row">교환배송비</th>
+                                                        <td>5,000원 (교환상품 배송비 +2,500원) <br> *교환배송비는 상품별로 상이할 수 있습니다.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="top" scope="row">교환/반품 유의사항</th>
+                                                        <td>- 상품 수령일로부터 7일 이내 반품/환불 가능합니다.
+                                                            <br> - 상품하자 이외 색상교환 등 단순 변심에 의한 교환/반품 택배비 고객부담으로 왕복택배비가 발생합니다. 
+                                                            <br> - 고객 부주의로 상품이 훼손, 변경된 경우 반품 / 교환이 불가능 합니다.
+                                                            <br> - 주문완료 후 재고 부족 등으로 인해 주문 취소 처리가 될 수도 있는 점 양해 부탁드립니다.
+                                                            <br> - 임의반품은 불가하오니 반드시 고객센터나 마이페이지 &gt; 주문취소/교환/반품 신청을 통해서 신청접수를 하시기 바랍니다.
+                                                            <br> - 특정브랜드의 상품설명에 별도로 기입된 교환/반품/AS기준이 우선합니다.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="top" scope="row">교환안내</th>
+                                                        <td>교환 가능 기간
+                                                            <br> 교환 신청은 배송 완료 후 7일 내 가능합니다.
+                                                            <br> 
+                                                            <br> 교환 불가 상품
+                                                            <br> 단순 변심의 경우 최초 배송된 상품의 상태와 다를 시 교환 및 반품이 불가합니다.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="top" scope="row">반품안내</th>
+                                                        <td>반품 가능 기간
+                                                            <br> 반품 신청은 배송 완료 후 7일 내 가능합니다.
+                                                            <br> 
+                                                            <br> 반품 불가 상품
+                                                            <br> 단순 변심의 경우 최초 배송된 상품의 상태와 다를 시 교환 및 반품이 불가합니다.
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <!-- // tbl-wrap -->
+                                    </div>
+                                    <!-- // prod-detail-delivery -->
+                                </div>
+                                <!-- // tab-content -->
+                            </div>
+                            <!-- // tab-wrap -->
+                        </div>
+                        <!-- // prod-detail-body -->
+                        <div class="prod-detail-footer">
+                            <div class="btn-box">
+                                <button type="button" class="btn-lg btn-line-black"><span class="text">장바구니</span></button>
+                                <button type="button" class="btn-lg btn-black"><span class="text">바로구매</span></button>
+                            </div>
+                            <!-- // btn-box -->
+                        </div>
+                        <!-- // prod-detail-footer -->
+                    </div>
+                    <!-- // prod-detail-wrap -->
+                </div>
+            </div>
+            <!-- // content-wrapper -->
+        </div>
+        <!-- // container-wrapper -->
+        <div class="footer-wrapper">
+            <div class="inner">
+                <div class="fnb-wrap">
+                    <ul class="fnb-list">
+                        <li class="fnb-item privacy">
+                            <a href="javascript:" class="fnb-link">개인정보처리방침</a>
+                        </li>
+                        <li class="fnb-item">
+                            <a href="javascript:" class="fnb-link">이용약관</a>
+                        </li>
+                        <li class="fnb-item">
+                            <a href="javascript:" class="fnb-link">회사소개</a>
+                        </li>
+                        <li class="fnb-item">
+                            <a href="javascript:" class="fnb-link">고객센터</a>
+                        </li>
+                        <li class="fnb-item">
+                            <a href="javascript:" class="fnb-link">매장안내</a>
+                        </li>
+                        <li class="fnb-item">
+                            <a href="javascript:" class="fnb-link">채용안내</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- // fnb-wrap -->
+                <ul class="footer-sns-list">
+                    <li class="footer-sns-item">
+                        <a href="javascript:" target="_blank" class="footer-sns-link">
+                            <span class="ico-ft-sns ico-ft-sns-instagram"></span>
+                            <span class="text">instagram</span>
+                        </a>
+                    </li>
+                    <li class="footer-sns-item">
+                        <a href="javascript:" target="_blank" class="footer-sns-link">
+                            <span class="ico-ft-sns ico-ft-sns-facebook"></span>
+                            <span class="text">facebook</span>
+                        </a>
+                    </li>
+                    <li class="footer-sns-item">
+                        <a href="javascript:" target="_blank" class="footer-sns-link">
+                            <span class="ico-ft-sns ico-ft-sns-twitter"></span>
+                            <span class="text">twitter</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- footer-sns-list -->
+                <p class="copy">COPYRIGHT@2024 DIPTYQUE PARIS CO. LTD ALL RIGHTS RESERVED.</p>
+                <!-- // copy -->
+            </div>
+        </div>
+        <!-- // footer-wrapper -->
+        <div class="floating-wrapper">
+            <button type="button" class="btn-go-top"><span class="ico-go-top"><span class="offscreen">최상위 화면으로</span></span></button>
+        </div>
+        <!-- // floating-wrapper -->
+        <script>
+            //tab-fixed
+            function setTabsfixedScr() {
+                var scrollOffset = $('.prod-detail-body .tab-wrap').offset();
+
+                $(window).scroll(function() {
+                    if ($(document).scrollTop() > scrollOffset.top) {
+                        $('.prod-detail-body .tab-wrap').addClass('fixed');
+                    }
+                    else {
+                        $('.prod-detail-body .tab-wrap').removeClass('fixed');
+                    }
+                });
+            }
+            
+            setTabsfixedScr();
+        </script>
+    </div>
+    <!-- // wrapper -->
+</body>
+</html>

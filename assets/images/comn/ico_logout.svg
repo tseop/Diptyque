@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="ic_menu_logout_H24" transform="translate(-483.476 -115)">
+    <rect id="area" width="24" height="24" transform="translate(483.476 115)" fill="none"/>
+    <rect id="사각형_5164" data-name="사각형 5164" width="14" height="2" rx="1" transform="translate(491.476 126)" fill="#fff"/>
+    <path id="패스_14823" data-name="패스 14823" d="M503.476,124.812l3,3-3,3" transform="translate(0 -0.812)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="합치기_130" data-name="합치기 130" d="M-1765-5446h-13a2,2,0,0,1-2-2v-18a2,2,0,0,1,2-2h13a1,1,0,0,1,1,1,1,1,0,0,1-1,1h-12a1,1,0,0,0-1,1v16a1,1,0,0,0,1,1h12a1,1,0,0,1,1,1,1,1,0,0,1-1,1Z" transform="translate(2265.476 5584)" fill="#fff"/>
+  </g>
+</svg>

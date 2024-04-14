@@ -1,0 +1,1482 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="딥디크 반응형 리뉴얼 페이지입니다">
+    <link rel="shortcut icon" href="../../assets/images/favicon/favicon.ico" type="image/x-icon">
+    <title>딥디크 (Diptyque)</title>
+    
+    <!-- Library CSS ================================================== -->
+    <link rel="stylesheet" href="../../assets/lib/swiper/css/swiper.min.css">
+    
+    <!-- CSS ================================================== -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    
+    <!-- Library javascript ================================================== -->
+    <script src="../../assets/lib/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+    <script src="../../assets/lib/swiper/js/swiper.min.js"></script>
+    
+    <!-- JavaScript ================================================== -->
+    <script src="../../assets/js/diptyque.js"></script>
+</head>
+<body>
+    <div class="wrapper main">
+        <div class="header-wrapper">
+            <div class="header-top">
+                <div class="inner">
+                    <div class="unb-wrap">
+                        <ul class="unb-list">
+                            <li class="unb-item">
+                                <a href="javascript:" class="unb-link">회원가입</a>
+                            </li>
+                            <li class="unb-item">
+                                <a href="javascript:" class="unb-link">로그인</a>
+                            </li>
+                            <li class="unb-item">
+                                <a href="javascript:" class="unb-link">마이페이지</a>
+                            </li>
+                            <li class="unb-item">
+                                <a href="javascript:" class="unb-link">고객센터</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- // unb-wrap -->
+                </div>
+            </div>
+            <!-- // header-top -->
+            <div class="header-middle">
+                <div class="inner">
+                    <h1 class="logo">
+                        <a href="main.html" title="첫 화면으로 이동">
+                            <img src="../../assets/images/comn/logo_img.png" alt="DIPTYQUE PARIS">
+                        </a>
+                    </h1>
+                    <!-- // logo -->
+                    <ul class="user-menu-list">
+                        <li class="user-menu-item search">
+                            <a href="javascript:" class="user-menu-link" role="button" title="검색">
+                                <span class="offscreen">검색열기</span>
+                            </a>
+                        </li>
+                        <li class="user-menu-item like">
+                            <a href="javascript:" class="user-menu-link" title="찜">
+                                <span class="offscreen">찜</span>
+                            </a>
+                        </li>
+                        <li class="user-menu-item bag">
+                            <!-- DESC : 장바구니 count 영역 최대 99까지 출력 -->
+                            <a href="javascript:" class="user-menu-link" title="장바구니">
+                                <span class="offscreen">장바구니</span>
+                                <span class="count">99+</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- //user-menu-list -->
+                </div>
+            </div>
+            <!-- // heaer-middle -->
+            <div class="header-bottom">
+                <div class="inner">
+                    <div class="gnb-wrap">
+                        <ul class="gnb-list main">
+                            <li class="gnb-item">
+                                <a href="../product/prod_list.html" class="gnb-link" title="전체 제품">ALL</a>
+                            </li>
+                            <li class="gnb-item">
+                                <a href="javascript:" class="gnb-link" title="향수 제품">PERFUME</a>
+                            </li>
+                            <li class="gnb-item">
+                                <a href="javascript:" class="gnb-link" title="목욕, 바디 제품">BATH & BODY</a>
+                            </li>
+                            <li class="gnb-item">
+                                <a href="javascript:" class="gnb-link" title="양초 제품">CANDLES & HOME</a>
+                            </li>
+                            <li class="gnb-item">
+                                <a href="javascript:" class="gnb-link" title="장식 제품">HOME DECOR</a>
+                            </li>
+                        </ul>
+                        <!-- // gnb-list main -->
+                        <ul class="gnb-list sub">
+                            <li class="gnb-item">
+                                <a href="javascript:" class="gnb-link" title="브랜드 소개">BRAND</a>
+                            </li>
+                            <li class="gnb-item">
+                                <a href="javascript:" class="gnb-link" title="매장 소개">STORE</a>
+                            </li>
+                            <li class="gnb-item">
+                                <a href="javascript:" class="gnb-link" title="이벤트">EVENT</a>
+                            </li>
+                            <li class="gnb-item">
+                                <a href="javascript:" class="gnb-link" title="공지사항">NOTICE</a>
+                            </li>
+                        </ul>
+                        <!-- // gnb-list sub -->
+                    </div>
+                    <!-- // gnb-wrap -->
+                </div>
+            </div>
+            <!-- // header-bottom -->
+            <!-- s : 검색영역 -->
+            <div class="header-search">
+                <div class="search-wrap">
+                    <div class="search-input-area">
+                        <div class="search-input-box">
+                            <input type="search" title="검색어 입력" class="ip-header-search" placeholder="어떤 제품을 찾으세요?">
+                            <button type="button" class="btn-ip-clear"><span class="offscreen">초기화</span></button>
+                        </div>
+                        <a href="javascript:" class="btn-ip-search"><span class="offscreen">검색</span></a>
+                    </div>
+                    <!-- // search-input-area -->
+                    <div class="search-keyword-area">
+                        <div class="recent-keyword">
+                            <div class="title-wrap">
+                                <span class="title">최근 검색어</span>
+                                <button class="btn-all-delete">전체삭제</button>
+                            </div>
+                            <!-- // title-wrap -->
+                            <div class="keyword-list-wrap">
+                                <!-- desc : 최대 10개 최신순으로 -->
+                                <ul class="keyword-list recent">
+                                    <li class="keyword-item">
+                                        <div class="left-area">
+                                            <a href="javascript:" class="keyword-link"><span class="keyword">오 드 퍼퓸 플레르 드 뽀 75ml</span></a>
+                                        </div>
+                                        <div class="right-area">
+                                            <span class="date">04.05</span>
+                                            <button class="btn-delete"><span class="offscreen">검색어 삭제</span></button>
+                                        </div>
+                                    </li>
+                                    <li class="keyword-item">
+                                        <div class="left-area">
+                                            <a href="javascript:" class="keyword-link"><span class="keyword">오 드 퍼퓸 플레르 드 뽀 75ml</span></a>
+                                        </div>
+                                        <div class="right-area">
+                                            <span class="date">04.04</span>
+                                            <button class="btn-delete"><span class="offscreen">검색어 삭제</span></button>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <!-- // keyword-list recent -->
+                                <div class="no-data">
+                                    <p class="no-data-desc">최근 검색어가 없습니다.</p>
+                                </div>
+                                <!-- // no-data -->
+                            </div>
+                            <!-- // keyword-list-wrap -->
+                        </div>
+                        <!-- // recent-keyword -->
+                        <div class="hot-keyword">
+                            <div class="title-wrap">
+                                <span class="title">인기 검색어</span>
+                            </div>
+                            <!-- // title-wrap -->
+                            <div class="keyword-list-wrap">
+                                <!-- desc : 검색 상위 10위권까지 출력 -->
+                                <ol class="keyword-list hot">
+                                    <li class="keyword-item">
+                                        <div class="left-area">
+                                            <a href="javascript:" class="keyword-link">
+                                                <span class="rank">1</span>
+                                                <span class="keyword">오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                            </a>
+                                        </div>
+                                        <div class="right-area">
+                                            <span class="rank-state"><span class="offscreen">변동 없음</span></span>
+                                        </div>
+                                    </li>
+                                    <li class="keyword-item">
+                                        <div class="left-area">
+                                            <a href="javascript:" class="keyword-link">
+                                                <span class="rank">2</span>
+                                                <span class="keyword">오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                            </a>
+                                        </div>
+                                        <div class="right-area">
+                                            <span class="rank-state up"><span class="offscreen">순위 상승</span>3</span>
+                                        </div>
+                                    </li>
+                                    <li class="keyword-item">
+                                        <div class="left-area">
+                                            <a href="javascript:" class="keyword-link">
+                                                <span class="rank">3</span>
+                                                <span class="keyword">오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                            </a>
+                                        </div>
+                                        <div class="right-area">
+                                            <span class="rank-state down"><span class="offscreen">순위 하락</span>2</span>
+                                        </div>
+                                    </li>
+                                    <li class="keyword-item">
+                                        <div class="left-area">
+                                            <a href="javascript:" class="keyword-link">
+                                                <span class="rank">4</span>
+                                                <span class="keyword">오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                            </a>
+                                        </div>
+                                        <div class="right-area">
+                                            <span class="rank-state down"><span class="offscreen">순위 하락</span>1</span>
+                                        </div>
+                                    </li>
+                                    <li class="keyword-item">
+                                        <div class="left-area">
+                                            <a href="javascript:" class="keyword-link">
+                                                <span class="rank">5</span>
+                                                <span class="keyword">오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                            </a>
+                                        </div>
+                                        <div class="right-area">
+                                            <span class="rank-state up"><span class="offscreen">순위 상승</span>1</span>
+                                        </div>
+                                    </li>
+                                    <li class="keyword-item">
+                                        <div class="left-area">
+                                            <a href="javascript:" class="keyword-link">
+                                                <span class="rank">6</span>
+                                                <span class="keyword">오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                            </a>
+                                        </div>
+                                        <div class="right-area">
+                                            <span class="rank-state"><span class="offscreen">변동 없음</span></span>
+                                        </div>
+                                    </li>
+                                    <li class="keyword-item">
+                                        <div class="left-area">
+                                            <a href="javascript:" class="keyword-link">
+                                                <span class="rank">7</span>
+                                                <span class="keyword">오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                            </a>
+                                        </div>
+                                        <div class="right-area">
+                                            <span class="rank-state down"><span class="offscreen">순위 하락</span>1</span>
+                                        </div>
+                                    </li>
+                                    <li class="keyword-item">
+                                        <div class="left-area">
+                                            <a href="javascript:" class="keyword-link">
+                                                <span class="rank">8</span>
+                                                <span class="keyword">오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                            </a>
+                                        </div>
+                                        <div class="right-area">
+                                            <span class="rank-state up"><span class="offscreen">순위 상승</span>1</span>
+                                        </div>
+                                    </li>
+                                    <li class="keyword-item">
+                                        <div class="left-area">
+                                            <a href="javascript:" class="keyword-link">
+                                                <span class="rank">9</span>
+                                                <span class="keyword">오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                            </a>
+                                        </div>
+                                        <div class="right-area">
+                                            <span class="rank-state down"><span class="offscreen">순위 하락</span>1</span>
+                                        </div>
+                                    </li>
+                                    <li class="keyword-item">
+                                        <div class="left-area">
+                                            <a href="javascript:" class="keyword-link">
+                                                <span class="rank">10</span>
+                                                <span class="keyword">오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                            </a>
+                                        </div>
+                                        <div class="right-area">
+                                            <span class="rank-state down"><span class="offscreen">순위 하락</span>1</span>
+                                        </div>
+                                    </li>
+                                </ol>
+                                <!-- // keyword-list hot -->
+                            </div>
+                           <!-- // keyword-list-wrap -->
+                        </div>
+                        <!-- // hot-keyword -->
+                    </div>
+                    <!-- // search-keyword-area -->
+                </div>
+                <!-- // search-wrap -->
+                <button type="button" class="btn-close"><span class="offscreen">닫기</span></button>
+            </div>
+            <!-- e : 검색영역 // header-search -->
+        </div>
+        <!-- // header-wrapper -->
+        <div class="container-wrapper">
+            <div class="content-wrapper">
+                <div class="main-banner-wrap">
+                    <div class="swiper-container">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <div class="slide-img pc">
+                                    <img src="../../assets/images/temp/main_banner_pc_img_01.jpg" alt="럭셔리 & 아티스틱 브랜드, DIPTYQUE">
+                                </div>
+                                <div class="slide-img mo">
+                                    <img src="../../assets/images/temp/main_banner_mo_img_01.jpg" alt="럭셔리 & 아티스틱 브랜드, DIPTYQUE">
+                                </div>
+                                <div class="slide-info">
+                                    <p class="title">럭셔리 & 아티스틱 브랜드,<br>DIPTYQUE</p>
+                                </div>
+                                <a href="javascript:" class="main-banner-link"><span class="offscreen">배너 링크</span></a>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="slide-img pc">
+                                    <img src="../../assets/images/temp/main_banner_pc_img_02.jpg" alt="딥티크 NEW 카페 베를레 캔들 미각의 예술, 카페 베를레와의 만남">
+                                </div>
+                                <div class="slide-img mo">
+                                    <img src="../../assets/images/temp/main_banner_mo_img_02.jpg" alt="딥티크 NEW 카페 베를레 캔들 미각의 예술, 카페 베를레와의 만남">
+                                </div>
+                                <div class="slide-info">
+                                    <p class="title">딥티크 NEW <br>카페 베를레 캔들</p>
+                                    <p class="sub-title">미각의 예술, 카페 베를레와의 만남</p>
+                                </div>
+                                <a href="javascript:" class="main-banner-link"><span class="offscreen">배너 링크</span></a>
+                            </li>
+                        </ul>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <!-- // main-banner-wrap -->
+                <div class="main-section-wrap youtube-section">
+                    <div class="inner">
+                        <div class="section-title">Diptyque Video</div>
+                        <div class="swiper-container">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide">
+                                    <div class="vod-box">
+                                        <div class="poster-img">
+                                            <img src="../../assets/images/temp/youtube_banner_img_01.jpg" alt="">
+                                        </div>
+                                        <a href="javascript:" target="_blank" class="btn-play" title="새창열기"><span class="offscreen">유튜브 바로가기</span></a>
+                                    </div>
+                                    <div class="info-box">
+                                        <span class="title original">A dreamlike journey into the world of Do Son</span>
+                                        <span class="title translate">도손의 세계로 떠나는 꿈같은 여행</span>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="vod-box">
+                                        <div class="poster-img">
+                                            <img src="../../assets/images/temp/youtube_banner_img_02.jpg" alt="">
+                                        </div>
+                                        <a href="javascript:" target="_blank" class="btn-play" title="새창열기"><span class="offscreen">유튜브 바로가기</span></a>
+                                    </div>
+                                    <div class="info-box">
+                                        <span class="title original">DIPTYQUE CRAFTSMANSHIP</span>
+                                        <span class="title translate">딥디크 장인정신</span>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="vod-box">
+                                        <div class="poster-img">
+                                            <img src="../../assets/images/temp/youtube_banner_img_03.jpg" alt="">
+                                        </div>
+                                        <a href="javascript:" target="_blank" class="btn-play" title="새창열기"><span class="offscreen">유튜브 바로가기</span></a>
+                                    </div>
+                                    <div class="info-box">
+                                        <span class="title original">DIPTYQUE LE GRAND TOUR</span>
+                                        <span class="title translate">딥디크 투어</span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- // main-section-wrap -->
+                <div class="main-section-wrap">
+                    <div class="inner">
+                        <div class="section-title">Collection</div>
+                        <div class="tab-wrap type-line">
+                            <div class="tab-list-wrap">
+                                <ul class="tab-list">
+                                    <li class="tab-item active"><button type="button" class="btn-tab"><span class="tab-text">PERFUME</span></button></li>
+                                    <li class="tab-item"><button type="button" class="btn-tab"><span class="tab-text">BATH &amp; BODY</span></button></li>
+                                    <li class="tab-item"><button type="button" class="btn-tab"><span class="tab-text">CANDELS &amp; HOME</span></button></li>
+                                    <li class="tab-item"><button type="button" class="btn-tab"><span class="tab-text">HOME DECOR</span></button></li>
+                                </ul>
+                            </div>
+                            <!-- // tab-list-wrap -->
+                            <div class="tab-content">
+                                <div class="collection-wrap">
+                                    <div class="collection-img-area">
+                                        <a href="javascipt:" class="collection-img-link">
+                                            <img src="../../assets/images/temp/collection_img_01.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <!-- // collection-img-area -->
+                                    <div class="collection-swiper-area">
+                                        <div class="swiper-prod-wrap swiper-collection-prod-list">
+                                            <div class="swiper-container prod-list-wrap">
+                                                <!-- DESC : 카테고리 별 6개씩 상품 출력 -->
+                                                <ul class="swiper-wrapper prod-list">
+                                                    <li class="swiper-slide prod-item">
+                                                        <a href="javascript:" class="prod-link">
+                                                            <div class="img-box">
+                                                                <img src="../../assets/images/temp/prod_list_img_01.jpg" alt="DIPTYQUE 오 드 퍼퓸 플레르 드 뽀 75ml">
+                                                            </div>
+                                                            <div class="info-box">
+                                                                <span class="cate">FRAGRANCES</span>
+                                                                <span class="name">오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                                                <span class="price">255,550</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <!-- // prod-item -->
+                                                    <li class="swiper-slide prod-item">
+                                                        <a href="javascript:" class="prod-link">
+                                                            <div class="img-box">
+                                                                <img src="../../assets/images/temp/prod_list_img_01.jpg" alt="DIPTYQUE 오 드 퍼퓸 플레르 드 뽀 75ml">
+                                                            </div>
+                                                            <div class="info-box">
+                                                                <span class="cate">FRAGRANCES</span>
+                                                                <span class="name">오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                                                <span class="price">255,550</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <!-- // prod-item -->
+                                                    <li class="swiper-slide prod-item">
+                                                        <a href="javascript:" class="prod-link">
+                                                            <div class="img-box">
+                                                                <img src="../../assets/images/temp/prod_list_img_01.jpg" alt="DIPTYQUE 오 드 퍼퓸 플레르 드 뽀 75ml">
+                                                            </div>
+                                                            <div class="info-box">
+                                                                <span class="cate">FRAGRANCES</span>
+                                                                <span class="name">오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                                                <span class="price">255,550</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <!-- // prod-item -->
+                                                    <li class="swiper-slide prod-item">
+                                                        <a href="javascript:" class="prod-link">
+                                                            <div class="img-box">
+                                                                <img src="../../assets/images/temp/prod_list_img_01.jpg" alt="DIPTYQUE 오 드 퍼퓸 플레르 드 뽀 75ml">
+                                                            </div>
+                                                            <div class="info-box">
+                                                                <span class="cate">FRAGRANCES</span>
+                                                                <span class="name">오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                                                <span class="price">255,550</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <!-- // prod-item -->
+                                                    <li class="swiper-slide prod-item">
+                                                        <a href="javascript:" class="prod-link">
+                                                            <div class="img-box">
+                                                                <img src="../../assets/images/temp/prod_list_img_01.jpg" alt="DIPTYQUE 오 드 퍼퓸 플레르 드 뽀 75ml">
+                                                            </div>
+                                                            <div class="info-box">
+                                                                <span class="cate">FRAGRANCES</span>
+                                                                <span class="name">오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                                                <span class="price">255,550</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <!-- // prod-item -->
+                                                    <li class="swiper-slide prod-item">
+                                                        <a href="javascript:" class="prod-link">
+                                                            <div class="img-box">
+                                                                <img src="../../assets/images/temp/prod_list_img_01.jpg" alt="DIPTYQUE 오 드 퍼퓸 플레르 드 뽀 75ml">
+                                                            </div>
+                                                            <div class="info-box">
+                                                                <span class="cate">FRAGRANCES</span>
+                                                                <span class="name">오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                                                <span class="price">255,550</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <!-- // prod-item -->
+                                                </ul>
+                                            </div>
+                                            <!-- // prod-list-wrap -->
+                                            <div class="swiper-control-wrap">
+                                                <button type="button" class="swiper-button-next"><span class="offscreen">다음</span></button>
+                                                <button type="button" class="swiper-button-prev"><span class="offscreen">이전</span></button>
+                                            </div>
+                                        </div>
+                                        <!-- // swiper-prod-wrap -->
+                                    </div>
+                                    <!-- // collection-swiper-area -->
+                                </div>
+                                <!-- // collection-wrap -->
+                            </div>
+                            <!-- // tab-content -->
+                            <div class="tab-content">
+                                <div class="collection-wrap">
+                                    <div class="collection-img-area">
+                                        <a href="javascipt:" class="collection-img-link">
+                                            <img src="../../assets/images/temp/collection_img_02.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <!-- // collection-img-area -->
+                                    <div class="collection-swiper-area">
+                                        <div class="swiper-prod-wrap swiper-collection-prod-list">
+                                            <div class="swiper-container prod-list-wrap">
+                                                <!-- DESC : 카테고리 별 6개씩 상품 출력 -->
+                                                <ul class="swiper-wrapper prod-list">
+                                                    <li class="swiper-slide prod-item">
+                                                        <a href="javascript:" class="prod-link">
+                                                            <div class="img-box">
+                                                                <img src="../../assets/images/temp/prod_list_img_02.jpg" alt="DIPTYQUE 바디 밤 플레르 드 뽀 200ml">
+                                                            </div>
+                                                            <div class="info-box">
+                                                                <span class="cate">BATH & BODY</span>
+                                                                <span class="name">바디 밤 플레르 드 뽀 200ml</span>
+                                                                <span class="price">112,100</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <!-- // prod-item -->
+                                                    <li class="swiper-slide prod-item">
+                                                        <a href="javascript:" class="prod-link">
+                                                            <div class="img-box">
+                                                                <img src="../../assets/images/temp/prod_list_img_02.jpg" alt="DIPTYQUE 바디 밤 플레르 드 뽀 200ml">
+                                                            </div>
+                                                            <div class="info-box">
+                                                                <span class="cate">BATH & BODY</span>
+                                                                <span class="name">바디 밤 플레르 드 뽀 200ml</span>
+                                                                <span class="price">112,100</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <!-- // prod-item -->
+                                                    <li class="swiper-slide prod-item">
+                                                        <a href="javascript:" class="prod-link">
+                                                            <div class="img-box">
+                                                                <img src="../../assets/images/temp/prod_list_img_02.jpg" alt="DIPTYQUE 바디 밤 플레르 드 뽀 200ml">
+                                                            </div>
+                                                            <div class="info-box">
+                                                                <span class="cate">BATH & BODY</span>
+                                                                <span class="name">바디 밤 플레르 드 뽀 200ml</span>
+                                                                <span class="price">112,100</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <!-- // prod-item -->
+                                                    <li class="swiper-slide prod-item">
+                                                        <a href="javascript:" class="prod-link">
+                                                            <div class="img-box">
+                                                                <img src="../../assets/images/temp/prod_list_img_02.jpg" alt="DIPTYQUE 바디 밤 플레르 드 뽀 200ml">
+                                                            </div>
+                                                            <div class="info-box">
+                                                                <span class="cate">BATH & BODY</span>
+                                                                <span class="name">바디 밤 플레르 드 뽀 200ml</span>
+                                                                <span class="price">112,100</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <!-- // prod-item -->
+                                                    <li class="swiper-slide prod-item">
+                                                        <a href="javascript:" class="prod-link">
+                                                            <div class="img-box">
+                                                                <img src="../../assets/images/temp/prod_list_img_02.jpg" alt="DIPTYQUE 바디 밤 플레르 드 뽀 200ml">
+                                                            </div>
+                                                            <div class="info-box">
+                                                                <span class="cate">BATH & BODY</span>
+                                                                <span class="name">바디 밤 플레르 드 뽀 200ml</span>
+                                                                <span class="price">112,100</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <!-- // prod-item -->
+                                                    <li class="swiper-slide prod-item">
+                                                        <a href="javascript:" class="prod-link">
+                                                            <div class="img-box">
+                                                                <img src="../../assets/images/temp/prod_list_img_02.jpg" alt="DIPTYQUE 바디 밤 플레르 드 뽀 200ml">
+                                                            </div>
+                                                            <div class="info-box">
+                                                                <span class="cate">BATH & BODY</span>
+                                                                <span class="name">바디 밤 플레르 드 뽀 200ml</span>
+                                                                <span class="price">112,100</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <!-- // prod-item -->
+                                                </ul>
+                                            </div>
+                                            <!-- // prod-list-wrap -->
+                                            <div class="swiper-control-wrap">
+                                                <button type="button" class="swiper-button-next"><span class="offscreen">다음</span></button>
+                                                <button type="button" class="swiper-button-prev"><span class="offscreen">이전</span></button>
+                                            </div>
+                                        </div>
+                                        <!-- // swiper-prod-wrap -->
+                                    </div>
+                                    <!-- // collection-swiper-area -->
+                                </div>
+                                <!-- // collection-wrap -->
+                            </div>
+                            <!-- // tab-content -->
+                            <div class="tab-content">
+                                <div class="collection-wrap">
+                                    <div class="collection-img-area">
+                                        <a href="javascipt:" class="collection-img-link">
+                                            <img src="../../assets/images/temp/collection_img_03.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <!-- // collection-img-area -->
+                                    <div class="collection-swiper-area">
+                                        <div class="swiper-prod-wrap swiper-collection-prod-list">
+                                            <div class="swiper-container prod-list-wrap">
+                                                <!-- DESC : 카테고리 별 6개씩 상품 출력 -->
+                                                <ul class="swiper-wrapper prod-list">
+                                                    <li class="swiper-slide prod-item">
+                                                        <a href="javascript:" class="prod-link">
+                                                            <div class="img-box">
+                                                                <img src="../../assets/images/temp/prod_list_img_03.jpg" alt="DIPTYQUE 캔들 나르길레 190g">
+                                                            </div>
+                                                            <div class="info-box">
+                                                                <span class="cate">CANDELS & HOME</span>
+                                                                <span class="name">캔들 나르길레 190g</span>
+                                                                <span class="price">93,100</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <!-- // prod-item -->
+                                                    <li class="swiper-slide prod-item">
+                                                        <a href="javascript:" class="prod-link">
+                                                            <div class="img-box">
+                                                                <img src="../../assets/images/temp/prod_list_img_03.jpg" alt="DIPTYQUE 캔들 나르길레 190g">
+                                                            </div>
+                                                            <div class="info-box">
+                                                                <span class="cate">CANDELS & HOME</span>
+                                                                <span class="name">캔들 나르길레 190g</span>
+                                                                <span class="price">93,100</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <!-- // prod-item -->
+                                                    <li class="swiper-slide prod-item">
+                                                        <a href="javascript:" class="prod-link">
+                                                            <div class="img-box">
+                                                                <img src="../../assets/images/temp/prod_list_img_03.jpg" alt="DIPTYQUE 캔들 나르길레 190g">
+                                                            </div>
+                                                            <div class="info-box">
+                                                                <span class="cate">CANDELS & HOME</span>
+                                                                <span class="name">캔들 나르길레 190g</span>
+                                                                <span class="price">93,100</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <!-- // prod-item -->
+                                                    <li class="swiper-slide prod-item">
+                                                        <a href="javascript:" class="prod-link">
+                                                            <div class="img-box">
+                                                                <img src="../../assets/images/temp/prod_list_img_03.jpg" alt="DIPTYQUE 캔들 나르길레 190g">
+                                                            </div>
+                                                            <div class="info-box">
+                                                                <span class="cate">CANDELS & HOME</span>
+                                                                <span class="name">캔들 나르길레 190g</span>
+                                                                <span class="price">93,100</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <!-- // prod-item -->
+                                                    <li class="swiper-slide prod-item">
+                                                        <a href="javascript:" class="prod-link">
+                                                            <div class="img-box">
+                                                                <img src="../../assets/images/temp/prod_list_img_03.jpg" alt="DIPTYQUE 캔들 나르길레 190g">
+                                                            </div>
+                                                            <div class="info-box">
+                                                                <span class="cate">CANDELS & HOME</span>
+                                                                <span class="name">캔들 나르길레 190g</span>
+                                                                <span class="price">93,100</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <!-- // prod-item -->
+                                                    <li class="swiper-slide prod-item">
+                                                        <a href="javascript:" class="prod-link">
+                                                            <div class="img-box">
+                                                                <img src="../../assets/images/temp/prod_list_img_03.jpg" alt="DIPTYQUE 캔들 나르길레 190g">
+                                                            </div>
+                                                            <div class="info-box">
+                                                                <span class="cate">CANDELS & HOME</span>
+                                                                <span class="name">캔들 나르길레 190g</span>
+                                                                <span class="price">93,100</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <!-- // prod-item -->
+                                                </ul>
+                                            </div>
+                                            <!-- // prod-list-wrap -->
+                                            <div class="swiper-control-wrap">
+                                                <button type="button" class="swiper-button-next"><span class="offscreen">다음</span></button>
+                                                <button type="button" class="swiper-button-prev"><span class="offscreen">이전</span></button>
+                                            </div>
+                                        </div>
+                                        <!-- // swiper-prod-wrap -->
+                                    </div>
+                                    <!-- // collection-swiper-area -->
+                                </div>
+                                <!-- // collection-wrap -->
+                            </div>
+                            <!-- // tab-content -->
+                            <div class="tab-content">
+                                <div class="collection-wrap">
+                                    <div class="collection-img-area">
+                                        <a href="javascipt:" class="collection-img-link">
+                                            <img src="../../assets/images/temp/collection_img_04.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <!-- // collection-img-area -->
+                                    <div class="collection-swiper-area">
+                                        <div class="swiper-prod-wrap swiper-collection-prod-list">
+                                            <div class="swiper-container prod-list-wrap">
+                                                <!-- DESC : 카테고리 별 6개씩 상품 출력 -->
+                                                <ul class="swiper-wrapper prod-list">
+                                                    <li class="swiper-slide prod-item">
+                                                        <a href="javascript:" class="prod-link">
+                                                            <div class="img-box">
+                                                                <img src="../../assets/images/temp/prod_list_img_04.jpg" alt="DIPTYQUE 리드 디퓨저 베이 200ml">
+                                                            </div>
+                                                            <div class="info-box">
+                                                                <span class="cate">HOME DECOR</span>
+                                                                <span class="name">리드 디퓨저 베이 200ml</span>
+                                                                <span class="price">264,100</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <!-- // prod-item -->
+                                                    <li class="swiper-slide prod-item">
+                                                        <a href="javascript:" class="prod-link">
+                                                            <div class="img-box">
+                                                                <img src="../../assets/images/temp/prod_list_img_04.jpg" alt="DIPTYQUE 리드 디퓨저 베이 200ml">
+                                                            </div>
+                                                            <div class="info-box">
+                                                                <span class="cate">HOME DECOR</span>
+                                                                <span class="name">리드 디퓨저 베이 200ml</span>
+                                                                <span class="price">264,100</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <!-- // prod-item -->
+                                                    <li class="swiper-slide prod-item">
+                                                        <a href="javascript:" class="prod-link">
+                                                            <div class="img-box">
+                                                                <img src="../../assets/images/temp/prod_list_img_04.jpg" alt="DIPTYQUE 리드 디퓨저 베이 200ml">
+                                                            </div>
+                                                            <div class="info-box">
+                                                                <span class="cate">HOME DECOR</span>
+                                                                <span class="name">리드 디퓨저 베이 200ml</span>
+                                                                <span class="price">264,100</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <!-- // prod-item -->
+                                                    <li class="swiper-slide prod-item">
+                                                        <a href="javascript:" class="prod-link">
+                                                            <div class="img-box">
+                                                                <img src="../../assets/images/temp/prod_list_img_04.jpg" alt="DIPTYQUE 리드 디퓨저 베이 200ml">
+                                                            </div>
+                                                            <div class="info-box">
+                                                                <span class="cate">HOME DECOR</span>
+                                                                <span class="name">리드 디퓨저 베이 200ml</span>
+                                                                <span class="price">264,100</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <!-- // prod-item -->
+                                                    <li class="swiper-slide prod-item">
+                                                        <a href="javascript:" class="prod-link">
+                                                            <div class="img-box">
+                                                                <img src="../../assets/images/temp/prod_list_img_04.jpg" alt="DIPTYQUE 리드 디퓨저 베이 200ml">
+                                                            </div>
+                                                            <div class="info-box">
+                                                                <span class="cate">HOME DECOR</span>
+                                                                <span class="name">리드 디퓨저 베이 200ml</span>
+                                                                <span class="price">264,100</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <!-- // prod-item -->
+                                                    <li class="swiper-slide prod-item">
+                                                        <a href="javascript:" class="prod-link">
+                                                            <div class="img-box">
+                                                                <img src="../../assets/images/temp/prod_list_img_04.jpg" alt="DIPTYQUE 리드 디퓨저 베이 200ml">
+                                                            </div>
+                                                            <div class="info-box">
+                                                                <span class="cate">HOME DECOR</span>
+                                                                <span class="name">리드 디퓨저 베이 200ml</span>
+                                                                <span class="price">264,100</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <!-- // prod-item -->
+                                                </ul>
+                                            </div>
+                                            <!-- // prod-list-wrap -->
+                                            <div class="swiper-control-wrap">
+                                                <button type="button" class="swiper-button-next"><span class="offscreen">다음</span></button>
+                                                <button type="button" class="swiper-button-prev"><span class="offscreen">이전</span></button>
+                                            </div>
+                                        </div>
+                                        <!-- // swiper-prod-wrap -->
+                                    </div>
+                                    <!-- // collection-swiper-area -->
+                                </div>
+                                <!-- // collection-wrap -->
+                            </div>
+                            <!-- // tab-content -->
+                        </div>
+                        <!-- // tab-wrap type-line -->
+                    </div>
+                </div>
+                <!-- // main-section-wrap -->
+                <div class="banner-wrap">
+                    <div class="swiper-container">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <div class="slide-img pc">
+                                    <img src="../../assets/images/temp/banner_pc_img_01.jpg" alt="스프링 페스타 시마을 뷰티">
+                                </div>
+                                <div class="slide-img mo">
+                                    <img src="../../assets/images/temp/banner_mo_img_01.jpg" alt="스프링 페스타 시마을 뷰티">
+                                </div>
+                                <div class="inner">
+                                    <div class="slide-info">
+                                        <p class="title">스프링 페스타<br>시마을 뷰티</p>
+                                        <p class="sub-title">상반기 역대급 쿠폰팩 & 페이백</p>
+                                    </div>
+                                </div>
+                                <a href="javscript:" class="banner-link"><span class="offscreen">배너 링크 이동</span></a>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="slide-img pc">
+                                    <img src="../../assets/images/temp/banner_pc_img_02.jpg" alt="ALL ABOUT PERFUME">
+                                </div>
+                                <div class="slide-img mo">
+                                    <img src="../../assets/images/temp/banner_mo_img_02.jpg" alt="ALL ABOUT PERFUME">
+                                </div>
+                                <div class="inner">
+                                    <div class="slide-info">
+                                        <p class="title">ALL ABOUT PERFUME</p>
+                                        <p class="sub-title">최대 30% 페이백 + 총 14만원 쇼핑지원금</p>
+                                    </div>
+                                </div>
+                                <a href="javscript:" class="banner-link"><span class="offscreen">배너 링크 이동</span></a>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="slide-img pc">
+                                    <img src="../../assets/images/temp/banner_pc_img_03.jpg" alt="꼭 담아가는 나의 뷰티 인생템!">
+                                </div>
+                                <div class="slide-img mo">
+                                    <img src="../../assets/images/temp/banner_mo_img_03.jpg" alt="꼭 담아가는 나의 뷰티 인생템!">
+                                </div>
+                                <div class="inner">
+                                    <div class="slide-info">
+                                        <p class="title">꼭 담아가는<br>나의 뷰티 인생템!</p>
+                                        <p class="sub-title">UP TO 76% OFF & 최대 14만원 쿠폰팩</p>
+                                    </div>
+                                </div>
+                                <a href="javscript:" class="banner-link"><span class="offscreen">배너 링크 이동</span></a>
+                            </li>
+                        </ul>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <!-- // banner-wrap -->
+                <div class="main-section-wrap">
+                    <div class="inner">
+                        <div class="section-title">Best Sellers</div>
+                        <div class="swiper-prod-wrap swiper-prod-list">
+                            <div class="swiper-container prod-list-wrap">
+                                <!-- DESC : 판매순 상위 10개 출력 -->
+                                <ol class="swiper-wrapper prod-list">
+                                    <li class="swiper-slide prod-item">
+                                        <a href="javascript:" class="prod-link">
+                                            <div class="img-box">
+                                                <img src="../../assets/images/temp/prod_list_img_01.jpg" alt="DIPTYQUE 오 드 퍼퓸 플레르 드 뽀 75ml">
+                                            </div>
+                                            <div class="info-box">
+                                                <span class="item-rank">1</span>
+                                                <span class="cate">FRAGRANCES</span>
+                                                <span class="name">오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                                <span class="price">255,550</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- prod-item -->
+                                    <li class="swiper-slide prod-item">
+                                        <a href="javascript:" class="prod-link">
+                                            <div class="img-box">
+                                                <img src="../../assets/images/temp/prod_list_img_02.jpg" alt="DIPTYQUE 바디 밤 플레르 드 뽀 200ml">
+                                            </div>
+                                            <div class="info-box">
+                                                <span class="item-rank">2</span>
+                                                <span class="cate">BATH & BODY</span>
+                                                <span class="name">바디 밤 플레르 드 뽀 200ml</span>
+                                                <span class="price">112,100</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- prod-item -->
+                                    <li class="swiper-slide prod-item">
+                                        <a href="javascript:" class="prod-link">
+                                            <div class="img-box">
+                                                <img src="../../assets/images/temp/prod_list_img_03.jpg" alt="DIPTYQUE 캔들 나르길레 190g">
+                                            </div>
+                                            <div class="info-box">
+                                                <span class="item-rank">3</span>
+                                                <span class="cate">CANDELS & HOME</span>
+                                                <span class="name">캔들 나르길레 190g</span>
+                                                <span class="price">93,100</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- prod-item -->
+                                    <li class="swiper-slide prod-item">
+                                        <a href="javascript:" class="prod-link">
+                                            <div class="img-box">
+                                                <img src="../../assets/images/temp/prod_list_img_04.jpg" alt="DIPTYQUE 리드 디퓨저 베이 200ml">
+                                            </div>
+                                            <div class="info-box">
+                                                <span class="item-rank">4</span>
+                                                <span class="cate">HOME DECOR</span>
+                                                <span class="name">리드 디퓨저 베이 200ml</span>
+                                                <span class="price">264,100</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- // prod-item -->
+                                    <li class="swiper-slide prod-item">
+                                        <a href="javascript:" class="prod-link">
+                                            <div class="img-box">
+                                                <img src="../../assets/images/temp/prod_list_img_01.jpg" alt="DIPTYQUE 오 드 퍼퓸 플레르 드 뽀 75ml">
+                                            </div>
+                                            <div class="info-box">
+                                                <span class="item-rank">5</span>
+                                                <span class="cate">FRAGRANCES</span>
+                                                <span class="name">오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                                <span class="price">255,550</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- prod-item -->
+                                    <li class="swiper-slide prod-item">
+                                        <a href="javascript:" class="prod-link">
+                                            <div class="img-box">
+                                                <img src="../../assets/images/temp/prod_list_img_02.jpg" alt="DIPTYQUE 바디 밤 플레르 드 뽀 200ml">
+                                            </div>
+                                            <div class="info-box">
+                                                <span class="item-rank">6</span>
+                                                <span class="cate">BATH & BODY</span>
+                                                <span class="name">바디 밤 플레르 드 뽀 200ml</span>
+                                                <span class="price">112,100</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- prod-item -->
+                                    <li class="swiper-slide prod-item">
+                                        <a href="javascript:" class="prod-link">
+                                            <div class="img-box">
+                                                <img src="../../assets/images/temp/prod_list_img_03.jpg" alt="DIPTYQUE 캔들 나르길레 190g">
+                                            </div>
+                                            <div class="info-box">
+                                                <span class="item-rank">7</span>
+                                                <span class="cate">CANDELS & HOME</span>
+                                                <span class="name">캔들 나르길레 190g</span>
+                                                <span class="price">93,100</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- prod-item -->
+                                    <li class="swiper-slide prod-item">
+                                        <a href="javascript:" class="prod-link">
+                                            <div class="img-box">
+                                                <img src="../../assets/images/temp/prod_list_img_04.jpg" alt="DIPTYQUE 리드 디퓨저 베이 200ml">
+                                            </div>
+                                            <div class="info-box">
+                                                <span class="item-rank">8</span>
+                                                <span class="cate">HOME DECOR</span>
+                                                <span class="name">리드 디퓨저 베이 200ml</span>
+                                                <span class="price">264,100</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- // prod-item -->
+                                    <li class="swiper-slide prod-item">
+                                        <a href="javascript:" class="prod-link">
+                                            <div class="img-box">
+                                                <img src="../../assets/images/temp/prod_list_img_01.jpg" alt="DIPTYQUE 오 드 퍼퓸 플레르 드 뽀 75ml">
+                                            </div>
+                                            <div class="info-box">
+                                                <span class="item-rank">9</span>
+                                                <span class="cate">FRAGRANCES</span>
+                                                <span class="name">오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                                <span class="price">255,550</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- prod-item -->
+                                    <li class="swiper-slide prod-item">
+                                        <a href="javascript:" class="prod-link">
+                                            <div class="img-box">
+                                                <img src="../../assets/images/temp/prod_list_img_02.jpg" alt="DIPTYQUE 바디 밤 플레르 드 뽀 200ml">
+                                            </div>
+                                            <div class="info-box">
+                                                <span class="item-rank">10</span>
+                                                <span class="cate">BATH & BODY</span>
+                                                <span class="name">바디 밤 플레르 드 뽀 200ml</span>
+                                                <span class="price">112,100</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- prod-item -->
+                                </ol>
+                            </div>
+                            <!-- // prod-list-wrap -->
+                            <div class="swiper-control-wrap">
+                                <button type="button" class="swiper-button-next"><span class="offscreen">다음</span></button>
+                                <button type="button" class="swiper-button-prev"><span class="offscreen">이전</span></button>
+                            </div>
+                            <!-- // swiper-control-wrap -->
+                        </div>
+                        <!-- // swiper-prod-wrap -->
+                    </div>
+                </div>
+                <!-- // main-section-wrap -->
+                <div class="main-section-wrap">
+                    <div class="inner">
+                        <div class="section-title">New Arrival</div>
+                        <div class="swiper-prod-wrap swiper-prod-list">
+                            <div class="swiper-container prod-list-wrap">
+                                <!-- DESC : 최신순 10개 출력 -->
+                                <ul class="swiper-wrapper prod-list">
+                                    <li class="swiper-slide prod-item">
+                                        <a href="javascript:" class="prod-link">
+                                            <div class="img-box">
+                                                <img src="../../assets/images/temp/prod_list_img_01.jpg" alt="DIPTYQUE 오 드 퍼퓸 플레르 드 뽀 75ml">
+                                                <span class="badge-new">NEW</span>
+                                            </div>
+                                            <div class="info-box">
+                                                <span class="cate">FRAGRANCES</span>
+                                                <span class="name">오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                                <span class="price">255,550</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- prod-item -->
+                                    <li class="swiper-slide prod-item">
+                                        <a href="javascript:" class="prod-link">
+                                            <div class="img-box">
+                                                <img src="../../assets/images/temp/prod_list_img_02.jpg" alt="DIPTYQUE 바디 밤 플레르 드 뽀 200ml">
+                                                <span class="badge-new">NEW</span>
+                                            </div>
+                                            <div class="info-box">
+                                                <span class="cate">BATH & BODY</span>
+                                                <span class="name">바디 밤 플레르 드 뽀 200ml</span>
+                                                <span class="price">112,100</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- prod-item -->
+                                    <li class="swiper-slide prod-item">
+                                        <a href="javascript:" class="prod-link">
+                                            <div class="img-box">
+                                                <img src="../../assets/images/temp/prod_list_img_03.jpg" alt="DIPTYQUE 캔들 나르길레 190g">
+                                                <span class="badge-new">NEW</span>
+                                            </div>
+                                            <div class="info-box">
+                                                <span class="cate">CANDELS & HOME</span>
+                                                <span class="name">캔들 나르길레 190g</span>
+                                                <span class="price">93,100</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- prod-item -->
+                                    <li class="swiper-slide prod-item">
+                                        <a href="javascript:" class="prod-link">
+                                            <div class="img-box">
+                                                <img src="../../assets/images/temp/prod_list_img_04.jpg" alt="DIPTYQUE 리드 디퓨저 베이 200ml">
+                                                <span class="badge-new">NEW</span>
+                                            </div>
+                                            <div class="info-box">
+                                                <span class="cate">HOME DECOR</span>
+                                                <span class="name">리드 디퓨저 베이 200ml</span>
+                                                <span class="price">264,100</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- // prod-item -->
+                                    <li class="swiper-slide prod-item">
+                                        <a href="javascript:" class="prod-link">
+                                            <div class="img-box">
+                                                <img src="../../assets/images/temp/prod_list_img_01.jpg" alt="DIPTYQUE 오 드 퍼퓸 플레르 드 뽀 75ml">
+                                                <span class="badge-new">NEW</span>
+                                            </div>
+                                            <div class="info-box">
+                                                <span class="cate">FRAGRANCES</span>
+                                                <span class="name">오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                                <span class="price">255,550</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- prod-item -->
+                                    <li class="swiper-slide prod-item">
+                                        <a href="javascript:" class="prod-link">
+                                            <div class="img-box">
+                                                <img src="../../assets/images/temp/prod_list_img_02.jpg" alt="DIPTYQUE 바디 밤 플레르 드 뽀 200ml">
+                                                <span class="badge-new">NEW</span>
+                                            </div>
+                                            <div class="info-box">
+                                                <span class="cate">BATH & BODY</span>
+                                                <span class="name">바디 밤 플레르 드 뽀 200ml</span>
+                                                <span class="price">112,100</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- prod-item -->
+                                    <li class="swiper-slide prod-item">
+                                        <a href="javascript:" class="prod-link">
+                                            <div class="img-box">
+                                                <img src="../../assets/images/temp/prod_list_img_03.jpg" alt="DIPTYQUE 캔들 나르길레 190g">
+                                                <span class="badge-new">NEW</span>
+                                            </div>
+                                            <div class="info-box">
+                                                <span class="cate">CANDELS & HOME</span>
+                                                <span class="name">캔들 나르길레 190g</span>
+                                                <span class="price">93,100</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- prod-item -->
+                                    <li class="swiper-slide prod-item">
+                                        <a href="javascript:" class="prod-link">
+                                            <div class="img-box">
+                                                <img src="../../assets/images/temp/prod_list_img_04.jpg" alt="DIPTYQUE 리드 디퓨저 베이 200ml">
+                                                <span class="badge-new">NEW</span>
+                                            </div>
+                                            <div class="info-box">
+                                                <span class="cate">HOME DECOR</span>
+                                                <span class="name">리드 디퓨저 베이 200ml</span>
+                                                <span class="price">264,100</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- // prod-item -->
+                                    <li class="swiper-slide prod-item">
+                                        <a href="javascript:" class="prod-link">
+                                            <div class="img-box">
+                                                <img src="../../assets/images/temp/prod_list_img_01.jpg" alt="DIPTYQUE 오 드 퍼퓸 플레르 드 뽀 75ml">
+                                                <span class="badge-new">NEW</span>
+                                            </div>
+                                            <div class="info-box">
+                                                <span class="cate">FRAGRANCES</span>
+                                                <span class="name">오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                                <span class="price">255,550</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- prod-item -->
+                                    <li class="swiper-slide prod-item">
+                                        <a href="javascript:" class="prod-link">
+                                            <div class="img-box">
+                                                <img src="../../assets/images/temp/prod_list_img_02.jpg" alt="DIPTYQUE 바디 밤 플레르 드 뽀 200ml">
+                                                <span class="badge-new">NEW</span>
+                                            </div>
+                                            <div class="info-box">
+                                                <span class="cate">BATH & BODY</span>
+                                                <span class="name">바디 밤 플레르 드 뽀 200ml</span>
+                                                <span class="price">112,100</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- prod-item -->
+                                </ul>
+                            </div>
+                            <!-- // prod-list-wrap -->
+                            <div class="swiper-control-wrap">
+                                <button type="button" class="swiper-button-next"><span class="offscreen">다음</span></button>
+                                <button type="button" class="swiper-button-prev"><span class="offscreen">이전</span></button>
+                            </div>
+                            <!-- // swiper-control-wrap -->
+                        </div>
+                        <!-- // swiper-prod-wrap -->
+                    </div>
+                </div>
+                <!-- // main-section-wrap -->
+                <div class="main-section-wrap">
+                    <div class="inner">
+                        <div class="section-title">About Diptyque</div>
+                        <div class="qmenu-list-wrap">
+                            <ul class="qmenu-list">
+                                <li class="qmenu-item">
+                                    <div class="img-box">
+                                        <a href="javascript:" class="img-link">
+                                            <img src="../../assets/images/temp/about_img_01.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <a href="javascript:" class="btn-go-arrow">BRAND</a>
+                                </li>
+                                <li class="qmenu-item">
+                                    <div class="img-box">
+                                        <a href="javascript:" class="img-link">
+                                            <img src="../../assets/images/temp/about_img_02.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <a href="javascript:" class="btn-go-arrow">STORE</a>
+                                </li>
+                                <li class="qmenu-item">
+                                    <div class="img-box">
+                                        <a href="javascript:" class="img-link">
+                                            <img src="../../assets/images/temp/about_img_03.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <a href="javascript:" class="btn-go-arrow">EVENT</a>
+                                </li>
+                                <li class="qmenu-item">
+                                    <div class="img-box">
+                                        <a href="javascript:" class="img-link">
+                                            <img src="../../assets/images/temp/about_img_04.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <a href="javascript:" class="btn-go-arrow">NOTICE</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- // qmenu-list-wrap -->
+                    </div>
+                </div>
+                <!-- // main-section-wrap -->
+            </div>
+            <!-- // content-wrapper -->
+        </div>
+        <!-- // container-wrapper -->
+        <div class="footer-wrapper">
+            <div class="inner">
+                <div class="fnb-wrap">
+                    <ul class="fnb-list">
+                        <li class="fnb-item privacy">
+                            <a href="javascript:" class="fnb-link">개인정보처리방침</a>
+                        </li>
+                        <li class="fnb-item">
+                            <a href="javascript:" class="fnb-link">이용약관</a>
+                        </li>
+                        <li class="fnb-item">
+                            <a href="javascript:" class="fnb-link">회사소개</a>
+                        </li>
+                        <li class="fnb-item">
+                            <a href="javascript:" class="fnb-link">고객센터</a>
+                        </li>
+                        <li class="fnb-item">
+                            <a href="javascript:" class="fnb-link">매장안내</a>
+                        </li>
+                        <li class="fnb-item">
+                            <a href="javascript:" class="fnb-link">채용안내</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- // fnb-wrap -->
+                <ul class="footer-sns-list">
+                    <li class="footer-sns-item">
+                        <a href="javascript:" target="_blank" class="footer-sns-link">
+                            <span class="ico-ft-sns ico-ft-sns-instagram"></span>
+                            <span class="text">instagram</span>
+                        </a>
+                    </li>
+                    <li class="footer-sns-item">
+                        <a href="javascript:" target="_blank" class="footer-sns-link">
+                            <span class="ico-ft-sns ico-ft-sns-facebook"></span>
+                            <span class="text">facebook</span>
+                        </a>
+                    </li>
+                    <li class="footer-sns-item">
+                        <a href="javascript:" target="_blank" class="footer-sns-link">
+                            <span class="ico-ft-sns ico-ft-sns-twitter"></span>
+                            <span class="text">twitter</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- footer-sns-list -->
+                <p class="copy">COPYRIGHT@2024 DIPTYQUE PARIS CO. LTD ALL RIGHTS RESERVED.</p>
+                <!-- // copy -->
+            </div>
+        </div>
+        <!-- // footer-wrapper -->
+        <div class="floating-wrapper">
+            <button type="button" class="btn-recent"><span class="ico-recent"><span class="offscreen">최근 본 제품 기록</span></span><span class="count">0</span></button>
+            <button type="button" class="btn-go-top"><span class="ico-go-top"><span class="offscreen">최상위 화면으로</span></span></button>
+        </div>
+        <!-- // floating-wrapper -->
+        <div class="bottom-navi">
+            <ul>
+                <li class="active">
+                    <a href="main.html" title="홈">
+                        <span class="ico-navi ico-navi-home"></span>
+                        <span class="text">HOME</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:" title="찜">
+                        <span class="ico-navi ico-navi-like"></span>
+                        <span class="text">LIKE</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:" title="마이페이지">
+                        <span class="ico-navi ico-navi-my"></span>
+                        <span class="text">MY</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#allmenuPopup" role="button" title="메뉴" class="btn-popup">
+                        <span class="ico-navi ico-navi-menu"></span>
+                        <span class="text">MENU</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- // bottom-navi -->
+        <script>
+            $(document).ready(function(){
+                //main-banner-swiper
+                var swiperMainBanner = new Swiper('.main-banner-wrap .swiper-container', {
+                    direction: 'horizontal',
+                    slidesPerView: 'auto',
+                    autoWidth: true,
+                    pagination: {
+                        el: '.main-banner-wrap .swiper-container .swiper-pagination',
+                        type: 'bullets',
+                        clickable: true,
+                    },
+                    loop:true,
+                    allowTouchMove: true,
+                    centeredSlides: true,
+                    speed: 500,
+                });
+                // youtube-swiper
+                var swiperYoutubeBanner = new Swiper('.main-section-wrap.youtube-section .swiper-container', {
+                    effect: 'fade',
+                    direction: 'horizontal',
+                    slidesPerView: 'auto',
+                    autoWidth: true,
+                    pagination: {
+                        el: '.main-section-wrap.youtube-section .swiper-container .swiper-pagination',
+                        type: 'bullets',
+                        clickable: true,
+                    },
+                    loop:true,
+                    allowTouchMove: true,
+                    centeredSlides: true,
+                    speed: 300,
+                });
+                // banner-swiper
+                var swiperSubBanner = new Swiper('.banner-wrap .swiper-container', {
+                    direction: 'horizontal',
+                    slidesPerView: 'auto',
+                    autoWidth: true,
+                    pagination: {
+                        el: '.banner-wrap .swiper-container .swiper-pagination',
+                        type: 'bullets',
+                        clickable: true,
+                    },
+                    loop:true,
+                    allowTouchMove: true,
+                    centeredSlides: true,
+                    speed: 500,
+                });
+
+                //collection-prod-list-swiper
+                function setCollectionProdListSwiper() {
+                    if ($('.swiper-collection-prod-list').length > 0) {
+                        $('.swiper-collection-prod-list').each(function () {
+                            var controlSwiperEl = $(this);
+                            controlSwiperEl.addClass('is-active');
+                            if ($('.swiper-slide', controlSwiperEl).length > 2) {
+                                var controlSwiper = new Swiper(controlSwiperEl.find('.swiper-container').get(0), {
+                                    init: false,
+                                    slidesPerView: '2',
+                                    spaceBetween: 20,
+                                    speed: 250,
+                                    navigation: {
+                                        nextEl: $('.swiper-button-next', controlSwiperEl)[0],
+                                        prevEl: $('.swiper-button-prev', controlSwiperEl)[0]
+                                    },
+                                    resistance: '100%',
+                                    resistanceRatio: 0,
+                                    updateOnWindowResize: true,
+                                    observer: true,
+                                    observeParents: true
+                                });
+                            } else {
+                                controlSwiperEl.removeClass('is-active');
+                            }
+                            controlSwiper.init();
+                        });
+                    }
+                }
+
+                setCollectionProdListSwiper();
+            });
+        </script>
+    </div>
+    <!-- // wrapper -->
+    <div class="popup-wrap allmenu" id="allmenuPopup">
+        <div class="popup-content">
+            <div class="popup-header">
+                <!-- DESC : 로그인 시 로그아웃 영역 활성화 -->
+                <!-- <a href="javascript:" class="btn-user logout"><span class="offscreen">로그아웃</span></a> -->
+                <a href="javascript:" class="btn-user option"><span class="offscreen">옵션</span></a>
+                <button type="button" class="btn-close"><span class="offscreen">닫기</span></button>
+            </div>
+            <!-- // allmenu-header -->
+            <div class="popup-body">
+                <div class="user-wrap">
+                    <!-- DESC : 로그인 시  1. [.user-desc]영역 -> 마이페이지로 링크 경로 변경 + 텍스트 회원성함으로 변경 2. 회원가입영역[.user-join] 삭제 -->
+                    <div class="user-desc">
+                        <a href="javascript:"><span class="text">로그인</span></a>
+                        <!-- 로그인 시 -->
+                        <!-- <a href="javascript:"><span class="text"><span class="name">이태섭</span>님 환영합니다!</span></a> -->
+                        <!-- // 로그인 시 -->
+                    </div>
+                    <div class="user-join">
+                        <a href="javascript:"><span class="text">회원가입</span></a>
+                    </div>
+                </div>
+                <div class="allmenu">
+                    <ul class="list main">
+                        <!-- desc : 현재페이지 [.current] 클래스 추가 -->
+                        <li class="item current">
+                            <a href="main.html" class="link">HOME</a>
+                        </li>
+                        <li class="item">
+                            <a href="../product/prod_list.html" class="link">ALL</a>
+                        </li>
+                        <li class="item">
+                            <a href="javascript:" class="link">PERFUME</a>
+                        </li>
+                        <li class="item">
+                            <a href="javascript:" class="link">BATH & BODY</a>
+                        </li>
+                        <li class="item">
+                            <a href="javascript:" class="link">CANDLES & HOME</a>
+                        </li>
+                        <li class="item">
+                            <a href="javascript:" class="link">HOME DECOR</a>
+                        </li>
+                    </ul>
+                    <ul class="list sub">
+                        <li class="item">
+                            <a href="javascript:" class="link">BRAND</a>
+                        </li>
+                        <li class="item">
+                            <a href="javascript:" class="link">STORE</a>
+                        </li>
+                        <li class="item">
+                            <a href="javascript:" class="link">EVENT</a>
+                        </li>
+                        <li class="item">
+                            <a href="javascript:" class="link">NOTICE</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- // popup-body -->
+        </div>
+        <!-- // popup-content -->
+    </div>
+    <!-- // popup-wrap allmenu -->
+</body>
+</html>

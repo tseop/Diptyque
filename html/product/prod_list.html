@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="딥디크 반응형 리뉴얼 페이지입니다">
+    <link rel="shortcut icon" href="../../assets/images/favicon/favicon.ico" type="image/x-icon">
+    <title>딥디크 (Diptyque)</title>
+    
+    <!-- Library CSS ================================================== -->
+    <link rel="stylesheet" href="../../assets/lib/swiper/css/swiper.min.css">
+    
+    <!-- CSS ================================================== -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    
+    <!-- Library javascript ================================================== -->
+    <script src="../../assets/lib/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+    <script src="../../assets/lib/swiper/js/swiper.min.js"></script>
+    
+    <!-- JavaScript ================================================== -->
+    <script src="../../assets/js/diptyque.js"></script>
+</head>
+<body>
+    <div class="wrapper sub">
+        <div class="header-wrapper">
+            <div class="header-top">
+                <div class="inner">
+                    <div class="unb-wrap">
+                        <ul class="unb-list">
+                            <li class="unb-item">
+                                <a href="javascript:" class="unb-link">회원가입</a>
+                            </li>
+                            <li class="unb-item">
+                                <a href="javascript:" class="unb-link">로그인</a>
+                            </li>
+                            <li class="unb-item">
+                                <a href="javascript:" class="unb-link">마이페이지</a>
+                            </li>
+                            <li class="unb-item">
+                                <a href="javascript:" class="unb-link">고객센터</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- // unb-wrap -->
+                </div>
+            </div>
+            <!-- // header-top -->
+            <div class="header-middle">
+                <div class="inner">
+                    <!-- desc : mo 전용 -->
+                    <div class="header-left">
+                        <a href="../main/main.html" class="btn-header-back"><span class="offscreen">뒤로</span></a>
+                        <div class="page-title">ALL</div>
+                        <button type="button" class="btn-sub-page"><span class="offscreen">페이지 보기</span></button>
+                        <div class="sub-list-box">
+                            <ul class="sub-list">
+                                <li class="sub-item active">
+                                    <a href="./prod_list.html" class="sub-link">ALL</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="javascript:" class="sub-link">PERFUME</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="javascript:" class="sub-link">BATH & BODY</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="javascript:" class="sub-link">CANDLES & HOME</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="javascript:" class="sub-link">HOME DECOR</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- // header-left -->
+                    <h1 class="logo">
+                        <a href="../main/main.html" title="첫 화면으로 이동">
+                            <img src="../../assets/images/comn/logo_img.png" alt="DIPTYQUE PARIS">
+                        </a>
+                    </h1>
+                    <!-- // logo -->
+                    <ul class="user-menu-list">
+                        <li class="user-menu-item search">
+                            <a href="javascript:" class="user-menu-link" role="button" title="검색">
+                                <span class="offscreen">검색열기</span>
+                            </a>
+                        </li>
+                        <li class="user-menu-item like">
+                            <a href="javascript:" class="user-menu-link" title="찜">
+                                <span class="offscreen">찜</span>
+                            </a>
+                        </li>
+                        <li class="user-menu-item bag">
+                            <!-- DESC : 장바구니 count 영역 최대 99까지 출력 -->
+                            <a href="javascript:" class="user-menu-link" title="장바구니">
+                                <span class="offscreen">장바구니</span>
+                                <span class="count">99+</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- //user-menu-list -->
+                </div>
+            </div>
+            <!-- // heaer-middle -->
+            <div class="header-bottom">
+                <div class="inner">
+                    <div class="gnb-wrap">
+                        <ul class="gnb-list main">
+                            <li class="gnb-item">
+                                <a href="./prod_list.html" class="gnb-link" title="전체 제품">ALL</a>
+                            </li>
+                            <li class="gnb-item">
+                                <a href="javascript:" class="gnb-link" title="향수 제품">PERFUME</a>
+                            </li>
+                            <li class="gnb-item">
+                                <a href="javascript:" class="gnb-link" title="목욕, 바디 제품">BATH & BODY</a>
+                            </li>
+                            <li class="gnb-item">
+                                <a href="javascript:" class="gnb-link" title="양초 제품">CANDLES & HOME</a>
+                            </li>
+                            <li class="gnb-item">
+                                <a href="javascript:" class="gnb-link" title="장식 제품">HOME DECOR</a>
+                            </li>
+                        </ul>
+                        <!-- // gnb-list main -->
+                        <ul class="gnb-list sub">
+                            <li class="gnb-item">
+                                <a href="javascript:" class="gnb-link" title="브랜드 소개">BRAND</a>
+                            </li>
+                            <li class="gnb-item">
+                                <a href="javascript:" class="gnb-link" title="매장 소개">STORE</a>
+                            </li>
+                            <li class="gnb-item">
+                                <a href="javascript:" class="gnb-link" title="이벤트">EVENT</a>
+                            </li>
+                            <li class="gnb-item">
+                                <a href="javascript:" class="gnb-link" title="공지사항">NOTICE</a>
+                            </li>
+                        </ul>
+                        <!-- // gnb-list sub -->
+                    </div>
+                    <!-- // gnb-wrap -->
+                </div>
+            </div>
+            <!-- // header-bottom -->
+            <!-- s : 검색영역 -->
+            <div class="header-search">
+                <div class="search-wrap">
+                    <div class="search-input-area">
+                        <div class="search-input-box">
+                            <input type="search" title="검색어 입력" class="ip-header-search" placeholder="어떤 제품을 찾으세요?">
+                            <button type="button" class="btn-ip-clear"><span class="offscreen">초기화</span></button>
+                        </div>
+                        <a href="javascript:" class="btn-ip-search"><span class="offscreen">검색</span></a>
+                    </div>
+                    <!-- // search-input-area -->
+                    <div class="search-keyword-area">
+                        <div class="recent-keyword">
+                            <div class="title-wrap">
+                                <span class="title">최근 검색어</span>
+                                <button class="btn-all-delete">전체삭제</button>
+                            </div>
+                            <!-- // title-wrap -->
+                            <div class="keyword-list-wrap">
+                                <!-- desc : 최대 10개 최신순으로 -->
+                                <ul class="keyword-list recent">
+                                    <li class="keyword-item">
+                                        <div class="left-area">
+                                            <a href="javascript:" class="keyword-link"><span class="keyword">오 드 퍼퓸 플레르 드 뽀 75ml</span></a>
+                                        </div>
+                                        <div class="right-area">
+                                            <span class="date">04.05</span>
+                                            <button class="btn-delete"><span class="offscreen">검색어 삭제</span></button>
+                                        </div>
+                                    </li>
+                                    <li class="keyword-item">
+                                        <div class="left-area">
+                                            <a href="javascript:" class="keyword-link"><span class="keyword">오 드 퍼퓸 플레르 드 뽀 75ml</span></a>
+                                        </div>
+                                        <div class="right-area">
+                                            <span class="date">04.04</span>
+                                            <button class="btn-delete"><span class="offscreen">검색어 삭제</span></button>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <!-- // keyword-list recent -->
+                                <div class="no-data">
+                                    <p class="no-data-desc">최근 검색어가 없습니다.</p>
+                                </div>
+                                <!-- // no-data -->
+                            </div>
+                            <!-- // keyword-list-wrap -->
+                        </div>
+                        <!-- // recent-keyword -->
+                        <div class="hot-keyword">
+                            <div class="title-wrap">
+                                <span class="title">인기 검색어</span>
+                            </div>
+                            <!-- // title-wrap -->
+                            <div class="keyword-list-wrap">
+                                <!-- desc : 검색 상위 10위권까지 출력 -->
+                                <ol class="keyword-list hot">
+                                    <li class="keyword-item">
+                                        <div class="left-area">
+                                            <a href="javascript:" class="keyword-link">
+                                                <span class="rank">1</span>
+                                                <span class="keyword">오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                            </a>
+                                        </div>
+                                        <div class="right-area">
+                                            <span class="rank-state"><span class="offscreen">변동 없음</span></span>
+                                        </div>
+                                    </li>
+                                    <li class="keyword-item">
+                                        <div class="left-area">
+                                            <a href="javascript:" class="keyword-link">
+                                                <span class="rank">2</span>
+                                                <span class="keyword">오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                            </a>
+                                        </div>
+                                        <div class="right-area">
+                                            <span class="rank-state up"><span class="offscreen">순위 상승</span>3</span>
+                                        </div>
+                                    </li>
+                                    <li class="keyword-item">
+                                        <div class="left-area">
+                                            <a href="javascript:" class="keyword-link">
+                                                <span class="rank">3</span>
+                                                <span class="keyword">오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                            </a>
+                                        </div>
+                                        <div class="right-area">
+                                            <span class="rank-state down"><span class="offscreen">순위 하락</span>2</span>
+                                        </div>
+                                    </li>
+                                    <li class="keyword-item">
+                                        <div class="left-area">
+                                            <a href="javascript:" class="keyword-link">
+                                                <span class="rank">4</span>
+                                                <span class="keyword">오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                            </a>
+                                        </div>
+                                        <div class="right-area">
+                                            <span class="rank-state down"><span class="offscreen">순위 하락</span>1</span>
+                                        </div>
+                                    </li>
+                                    <li class="keyword-item">
+                                        <div class="left-area">
+                                            <a href="javascript:" class="keyword-link">
+                                                <span class="rank">5</span>
+                                                <span class="keyword">오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                            </a>
+                                        </div>
+                                        <div class="right-area">
+                                            <span class="rank-state up"><span class="offscreen">순위 상승</span>1</span>
+                                        </div>
+                                    </li>
+                                    <li class="keyword-item">
+                                        <div class="left-area">
+                                            <a href="javascript:" class="keyword-link">
+                                                <span class="rank">6</span>
+                                                <span class="keyword">오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                            </a>
+                                        </div>
+                                        <div class="right-area">
+                                            <span class="rank-state"><span class="offscreen">변동 없음</span></span>
+                                        </div>
+                                    </li>
+                                    <li class="keyword-item">
+                                        <div class="left-area">
+                                            <a href="javascript:" class="keyword-link">
+                                                <span class="rank">7</span>
+                                                <span class="keyword">오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                            </a>
+                                        </div>
+                                        <div class="right-area">
+                                            <span class="rank-state down"><span class="offscreen">순위 하락</span>1</span>
+                                        </div>
+                                    </li>
+                                    <li class="keyword-item">
+                                        <div class="left-area">
+                                            <a href="javascript:" class="keyword-link">
+                                                <span class="rank">8</span>
+                                                <span class="keyword">오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                            </a>
+                                        </div>
+                                        <div class="right-area">
+                                            <span class="rank-state up"><span class="offscreen">순위 상승</span>1</span>
+                                        </div>
+                                    </li>
+                                    <li class="keyword-item">
+                                        <div class="left-area">
+                                            <a href="javascript:" class="keyword-link">
+                                                <span class="rank">9</span>
+                                                <span class="keyword">오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                            </a>
+                                        </div>
+                                        <div class="right-area">
+                                            <span class="rank-state down"><span class="offscreen">순위 하락</span>1</span>
+                                        </div>
+                                    </li>
+                                    <li class="keyword-item">
+                                        <div class="left-area">
+                                            <a href="javascript:" class="keyword-link">
+                                                <span class="rank">10</span>
+                                                <span class="keyword">오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                            </a>
+                                        </div>
+                                        <div class="right-area">
+                                            <span class="rank-state down"><span class="offscreen">순위 하락</span>1</span>
+                                        </div>
+                                    </li>
+                                </ol>
+                                <!-- // keyword-list hot -->
+                            </div>
+                           <!-- // keyword-list-wrap -->
+                        </div>
+                        <!-- // hot-keyword -->
+                    </div>
+                    <!-- // search-keyword-area -->
+                </div>
+                <!-- // search-wrap -->
+                <button type="button" class="btn-close"><span class="offscreen">닫기</span></button>
+            </div>
+            <!-- e : 검색영역 // header-search -->
+        </div>
+        <!-- // header-wrapper -->
+        <div class="container-wrapper">
+            <div class="breadcrumb-wrapper">
+                <div class="inner">
+                    <div class="breadcrumb-wrap">
+                        <ul class="breadcrumb-list">
+                            <li class="breadcrumb-item">
+                                <a href="javascript:" class="breadcrumb-link"><span class="text">HOME</span></a>
+                            </li>
+                            <li class="breadcrumb-item current has-sub">
+                                <a href="javascript:" class="breadcrumb-link"><span class="text">ALL</span></a>
+                                <div class="sub-depth-box">
+                                    <ul class="sub-depth-list">
+                                        <li class="depth-item active">
+                                            <a href="./prod_list.html" class="depth-link">ALL</a>
+                                        </li>
+                                        <li class="depth-item">
+                                            <a href="javacript:" class="depth-link">PERFUME</a>
+                                        </li>
+                                        <li class="depth-item">
+                                            <a href="javacript:" class="depth-link">BATH & BODY</a>
+                                        </li>
+                                        <li class="depth-item">
+                                            <a href="javacript:" class="depth-link">CANDLES & HOME</a>
+                                        </li>
+                                        <li class="depth-item">
+                                            <a href="javacript:" class="depth-link">HOME DECOR</a>
+                                        </li>
+                                    </ul>    
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- // breadcrumb-wrapper -->
+            <div class="content-wrapper">
+                <div class="inner">
+                    <div class="ptitle-wrap">
+                        <p class="ptitle">Diptyque Product</p>
+                    </div>
+                    <!-- // ptitle-wrap -->
+                    <div class="list-sort-wrap">
+                        <div class="total-area">
+                            <span class="text">전체상품</span>
+                            <span class="num">120</span>
+                        </div>
+                        <div class="right-area">
+                            <div class="select-box">
+                                <button type="button" class="btn-select"><span>인기상품순</span></button>
+                                <ul class="option-list">
+                                    <li class="option-item">
+                                        <button type="button" class="btn-option"><span>인기상품순</span></button>
+                                    </li>
+                                    <li class="option-item">
+                                        <button type="button" class="btn-option"><span>신상품순</span></button>
+                                    </li>
+                                    <li class="option-item">
+                                        <button type="button" class="btn-option"><span>낮은가격순</span></button>
+                                    </li>
+                                    <li class="option-item">
+                                        <button type="button" class="btn-option"><span>높은가격순</span></button>
+                                    </li>
+                                    <li class="option-item">
+                                        <button type="button" class="btn-option"><span>할인율순</span></button>
+                                    </li>
+                                    <li class="option-item">
+                                        <button type="button" class="btn-option"><span>추천순</span></button>
+                                    </li>
+                                </ul>                              
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // list-sort-wrap -->
+                    <div class="prod-list-wrap">
+                        <!-- DESC : 상품 12개씩 출력 -->
+                        <ul class="prod-list">
+                            <li class="prod-item">
+                                <a href="./prod_detail.html" class="prod-link">
+                                    <div class="img-box">
+                                        <img src="../../assets/images/temp/prod_list_img_01.jpg" alt="DIPTYQUE 오 드 퍼퓸 플레르 드 뽀 75ml">
+                                    </div>
+                                    <div class="info-box">
+                                        <span class="cate">FRAGRANCES</span>
+                                        <span class="name">오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                        <span class="price">255,550</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- // prod-item -->
+                            <li class="prod-item">
+                                <a href="./prod_detail.html" class="prod-link">
+                                    <div class="img-box">
+                                        <img src="../../assets/images/temp/prod_list_img_01.jpg" alt="DIPTYQUE 오 드 퍼퓸 플레르 드 뽀 75ml">
+                                    </div>
+                                    <div class="info-box">
+                                        <span class="cate">FRAGRANCES FRAGRANCES FRAGRANCES</span>
+                                        <span class="name">오 드 퍼퓸 플레르 드 뽀 75ml 오 드 퍼퓸 플레르 드 뽀 75ml 오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                        <span class="price">255,550</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- // prod-item -->
+                            <li class="prod-item">
+                                <a href="./prod_detail.html" class="prod-link">
+                                    <div class="img-box">
+                                        <img src="../../assets/images/temp/prod_list_img_01.jpg" alt="DIPTYQUE 오 드 퍼퓸 플레르 드 뽀 75ml">
+                                    </div>
+                                    <div class="info-box">
+                                        <span class="cate">FRAGRANCES</span>
+                                        <span class="name">오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                        <span class="price">255,550</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- // prod-item -->
+                            <li class="prod-item">
+                                <a href="./prod_detail.html" class="prod-link">
+                                    <div class="img-box">
+                                        <img src="../../assets/images/temp/prod_list_img_01.jpg" alt="DIPTYQUE 오 드 퍼퓸 플레르 드 뽀 75ml">
+                                    </div>
+                                    <div class="info-box">
+                                        <span class="cate">FRAGRANCES FRAGRANCES FRAGRANCES</span>
+                                        <span class="name">오 드 퍼퓸 플레르 드 뽀 75ml 오 드 퍼퓸 플레르 드 뽀 75ml 오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                        <span class="price">255,550</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- // prod-item -->
+                            <li class="prod-item">
+                                <a href="./prod_detail.html" class="prod-link">
+                                    <div class="img-box">
+                                        <img src="../../assets/images/temp/prod_list_img_01.jpg" alt="DIPTYQUE 오 드 퍼퓸 플레르 드 뽀 75ml">
+                                    </div>
+                                    <div class="info-box">
+                                        <span class="cate">FRAGRANCES</span>
+                                        <span class="name">오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                        <span class="price">255,550</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- // prod-item -->
+                            <li class="prod-item">
+                                <a href="./prod_detail.html" class="prod-link">
+                                    <div class="img-box">
+                                        <img src="../../assets/images/temp/prod_list_img_01.jpg" alt="DIPTYQUE 오 드 퍼퓸 플레르 드 뽀 75ml">
+                                    </div>
+                                    <div class="info-box">
+                                        <span class="cate">FRAGRANCES FRAGRANCES FRAGRANCES</span>
+                                        <span class="name">오 드 퍼퓸 플레르 드 뽀 75ml 오 드 퍼퓸 플레르 드 뽀 75ml 오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                        <span class="price">255,550</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- // prod-item -->
+                            <li class="prod-item">
+                                <a href="./prod_detail.html" class="prod-link">
+                                    <div class="img-box">
+                                        <img src="../../assets/images/temp/prod_list_img_01.jpg" alt="DIPTYQUE 오 드 퍼퓸 플레르 드 뽀 75ml">
+                                    </div>
+                                    <div class="info-box">
+                                        <span class="cate">FRAGRANCES</span>
+                                        <span class="name">오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                        <span class="price">255,550</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- // prod-item -->
+                            <li class="prod-item">
+                                <a href="./prod_detail.html" class="prod-link">
+                                    <div class="img-box">
+                                        <img src="../../assets/images/temp/prod_list_img_01.jpg" alt="DIPTYQUE 오 드 퍼퓸 플레르 드 뽀 75ml">
+                                    </div>
+                                    <div class="info-box">
+                                        <span class="cate">FRAGRANCES FRAGRANCES FRAGRANCES</span>
+                                        <span class="name">오 드 퍼퓸 플레르 드 뽀 75ml 오 드 퍼퓸 플레르 드 뽀 75ml 오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                        <span class="price">255,550</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- // prod-item -->
+                            <li class="prod-item">
+                                <a href="./prod_detail.html" class="prod-link">
+                                    <div class="img-box">
+                                        <img src="../../assets/images/temp/prod_list_img_01.jpg" alt="DIPTYQUE 오 드 퍼퓸 플레르 드 뽀 75ml">
+                                    </div>
+                                    <div class="info-box">
+                                        <span class="cate">FRAGRANCES</span>
+                                        <span class="name">오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                        <span class="price">255,550</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- // prod-item -->
+                            <li class="prod-item">
+                                <a href="./prod_detail.html" class="prod-link">
+                                    <div class="img-box">
+                                        <img src="../../assets/images/temp/prod_list_img_01.jpg" alt="DIPTYQUE 오 드 퍼퓸 플레르 드 뽀 75ml">
+                                    </div>
+                                    <div class="info-box">
+                                        <span class="cate">FRAGRANCES FRAGRANCES FRAGRANCES</span>
+                                        <span class="name">오 드 퍼퓸 플레르 드 뽀 75ml 오 드 퍼퓸 플레르 드 뽀 75ml 오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                        <span class="price">255,550</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- // prod-item -->
+                            <li class="prod-item">
+                                <a href="./prod_detail.html" class="prod-link">
+                                    <div class="img-box">
+                                        <img src="../../assets/images/temp/prod_list_img_01.jpg" alt="DIPTYQUE 오 드 퍼퓸 플레르 드 뽀 75ml">
+                                    </div>
+                                    <div class="info-box">
+                                        <span class="cate">FRAGRANCES</span>
+                                        <span class="name">오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                        <span class="price">255,550</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- // prod-item -->
+                            <li class="prod-item">
+                                <a href="./prod_detail.html" class="prod-link">
+                                    <div class="img-box">
+                                        <img src="../../assets/images/temp/prod_list_img_01.jpg" alt="DIPTYQUE 오 드 퍼퓸 플레르 드 뽀 75ml">
+                                    </div>
+                                    <div class="info-box">
+                                        <span class="cate">FRAGRANCES FRAGRANCES FRAGRANCES</span>
+                                        <span class="name">오 드 퍼퓸 플레르 드 뽀 75ml 오 드 퍼퓸 플레르 드 뽀 75ml 오 드 퍼퓸 플레르 드 뽀 75ml</span>
+                                        <span class="price">255,550</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- // prod-item -->
+                        </ul>
+                    </div>
+                    <!-- // prod-list-wrap -->
+                    <div class="pagination">
+                        <a href="#none" class="btn-page first disabled"><span class="offscreen">처음</span></a>
+                        <a href="#none" class="btn-page prev disabled"><span class="offscreen">이전</span></a>
+                        <div class="page-num-group">
+                            <!-- DESC : 페이징 버튼 비활성화 클래스 - [ .current ] -->
+                            <span class="btn-page-num current">1</span>
+                            <a href="#none" class="btn-page-num">2</a>
+                            <a href="#none" class="btn-page-num">3</a>
+                            <a href="#none" class="btn-page-num">4</a>
+                            <a href="#none" class="btn-page-num">5</a>
+                        </div>
+                        <a href="#none" class="btn-page next"><span class="offscreen">다음</span></a>
+                        <a href="#none" class="btn-page last"><span class="offscreen">마지막</span></a>
+                    </div>
+                    <!-- // pagination -->
+                </div>
+            </div>
+            <!-- // content-wrapper -->
+        </div>
+        <!-- // container-wrapper -->
+        <div class="footer-wrapper">
+            <div class="inner">
+                <div class="fnb-wrap">
+                    <ul class="fnb-list">
+                        <li class="fnb-item privacy">
+                            <a href="javascript:" class="fnb-link">개인정보처리방침</a>
+                        </li>
+                        <li class="fnb-item">
+                            <a href="javascript:" class="fnb-link">이용약관</a>
+                        </li>
+                        <li class="fnb-item">
+                            <a href="javascript:" class="fnb-link">회사소개</a>
+                        </li>
+                        <li class="fnb-item">
+                            <a href="javascript:" class="fnb-link">고객센터</a>
+                        </li>
+                        <li class="fnb-item">
+                            <a href="javascript:" class="fnb-link">매장안내</a>
+                        </li>
+                        <li class="fnb-item">
+                            <a href="javascript:" class="fnb-link">채용안내</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- // fnb-wrap -->
+                <ul class="footer-sns-list">
+                    <li class="footer-sns-item">
+                        <a href="javascript:" target="_blank" class="footer-sns-link">
+                            <span class="ico-ft-sns ico-ft-sns-instagram"></span>
+                            <span class="text">instagram</span>
+                        </a>
+                    </li>
+                    <li class="footer-sns-item">
+                        <a href="javascript:" target="_blank" class="footer-sns-link">
+                            <span class="ico-ft-sns ico-ft-sns-facebook"></span>
+                            <span class="text">facebook</span>
+                        </a>
+                    </li>
+                    <li class="footer-sns-item">
+                        <a href="javascript:" target="_blank" class="footer-sns-link">
+                            <span class="ico-ft-sns ico-ft-sns-twitter"></span>
+                            <span class="text">twitter</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- footer-sns-list -->
+                <p class="copy">COPYRIGHT@2024 DIPTYQUE PARIS CO. LTD ALL RIGHTS RESERVED.</p>
+                <!-- // copy -->
+            </div>
+        </div>
+        <!-- // footer-wrapper -->
+        <div class="floating-wrapper">
+            <button type="button" class="btn-recent"><span class="ico-recent"><span class="offscreen">최근 본 제품 기록</span></span><span class="count">0</span></button>
+            <button type="button" class="btn-go-top"><span class="ico-go-top"><span class="offscreen">최상위 화면으로</span></span></button>
+        </div>
+        <!-- // floating-wrapper -->
+        <div class="bottom-navi">
+            <ul>
+                <li class="active">
+                    <a href="javascript:" title="홈">
+                        <span class="ico-navi ico-navi-home"></span>
+                        <span class="text">HOME</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:" title="찜">
+                        <span class="ico-navi ico-navi-like"></span>
+                        <span class="text">LIKE</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:" title="마이페이지">
+                        <span class="ico-navi ico-navi-my"></span>
+                        <span class="text">MY</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#allmenuPopup" role="button" title="메뉴" class="btn-popup">
+                        <span class="ico-navi ico-navi-menu"></span>
+                        <span class="text">MENU</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- // bottom-navi -->
+    </div>
+    <!-- // wrapper -->
+    <div class="popup-wrap allmenu" id="allmenuPopup">
+        <div class="popup-content">
+            <div class="popup-header">
+                <!-- DESC : 로그인 시 로그아웃 영역 활성화 -->
+                <!-- <a href="javascript:" class="btn-user logout"><span class="offscreen">로그아웃</span></a> -->
+                <a href="javascript:" class="btn-user option"><span class="offscreen">옵션</span></a>
+                <button type="button" class="btn-close"><span class="offscreen">닫기</span></button>
+            </div>
+            <!-- // allmenu-header -->
+            <div class="popup-body">
+                <div class="user-wrap">
+                    <!-- DESC : 로그인 시  1. [.user-desc]영역 -> 마이페이지로 링크 경로 변경 + 텍스트 회원성함으로 변경 2. 회원가입영역[.user-join] 삭제 -->
+                    <div class="user-desc">
+                        <a href="javascript:"><span class="text">로그인</span></a>
+                        <!-- 로그인 시 -->
+                        <!-- <a href="javascript:"><span class="text"><span class="name">이태섭</span>님 환영합니다!</span></a> -->
+                        <!-- // 로그인 시 -->
+                    </div>
+                    <div class="user-join">
+                        <a href="javascript:"><span class="text">회원가입</span></a>
+                    </div>
+                </div>
+                <div class="allmenu">
+                    <ul class="list main">
+                        <!-- desc : 현재페이지 [.current] 클래스 추가 -->
+                        <li class="item current">
+                            <a href="../main/main.html" class="link">HOME</a>
+                        </li>
+                        <li class="item">
+                            <a href="./prod_list.html" class="link">ALL</a>
+                        </li>
+                        <li class="item">
+                            <a href="javascript:" class="link">PERFUME</a>
+                        </li>
+                        <li class="item">
+                            <a href="javascript:" class="link">BATH & BODY</a>
+                        </li>
+                        <li class="item">
+                            <a href="javascript:" class="link">CANDLES & HOME</a>
+                        </li>
+                        <li class="item">
+                            <a href="javascript:" class="link">HOME DECOR</a>
+                        </li>
+                    </ul>
+                    <ul class="list sub">
+                        <li class="item">
+                            <a href="javascript:" class="link">BRAND</a>
+                        </li>
+                        <li class="item">
+                            <a href="javascript:" class="link">STORE</a>
+                        </li>
+                        <li class="item">
+                            <a href="javascript:" class="link">EVENT</a>
+                        </li>
+                        <li class="item">
+                            <a href="javascript:" class="link">NOTICE</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- // popup-body -->
+        </div>
+        <!-- // popup-content -->
+    </div>
+    <!-- // popup-wrap allmenu -->
+</body>
+</html>
